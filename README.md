@@ -1,3 +1,4 @@
-# Denison Expanding Archives Omeka Theme
+#Images of Women in Sport and Physical Education O
 
-This is an Omeka theme made especially for the Expanding Archives project of Denison University, but can be used in other Omeka website with the similar purposes. The project is written in PHP, HTML and CSS.
+
+This theme is based on the Denison Expanding Archives Omeka Theme, but can be used in other Omeka website with the similar purposes. The project is written in PHP, HTML and CSS.

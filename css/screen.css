@@ -676,7 +676,7 @@ nav {
           letter-spacing: 0.2em; }
     .highlight-jumbotron .section .back {
       height: 100%;
-      background-color: rgba(138, 0, 17, 0.9);
+      background-color: rgba(81, 71, 23, 0.9);
       z-index: 3;
       opacity: 0;
       /* Firefox */
@@ -784,7 +784,7 @@ input[type=checkbox].checkbox-hidden {
       @include box-shadow(none);
       outline: none;
     }
-    
+
     &:hover {
       color: white;
       background-color: $dark-grey;

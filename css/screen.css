@@ -40,10 +40,10 @@ article p#simple-pages-breadcrumbs {
   font-size: 1em; }
   article p#simple-pages-breadcrumbs a {
     text-decoration: none;
-    color: #CFB53B
+    color: #000000;
     padding: 3px 5px; }
     article p#simple-pages-breadcrumbs a:hover {
-      background-color: #CFB53B
+      background-color: #000000;
       color: white;
       border-radius: 3px; }
 
@@ -82,7 +82,7 @@ article p#simple-pages-breadcrumbs {
     line-height: 1.7em; }
   .article-content > quote {
     font-style: italic;
-    color: #CFB53B
+    color: #000000;
     display: block;
     font-size: 2.5em;
     margin-bottom: 1.6875em;
@@ -90,11 +90,11 @@ article p#simple-pages-breadcrumbs {
   .article-content > h1 i, .article-content > h2 i, .article-content > h3 i, .article-content > h4 i, .article-content > h5 i, .article-content > h6 i, .article-content > p i, .article-content > pre i, .article-content > address i {
     font-style: italic; }
   .article-content > h1 em, .article-content > h2 em, .article-content > h3 em, .article-content > h4 em, .article-content > h5 em, .article-content > h6 em, .article-content > p em, .article-content > pre em, .article-content > address em {
-    color: #CFB53B }
+    color: #000000; }
   .article-content > h1 sub, .article-content > h1 sup, .article-content > h2 sub, .article-content > h2 sup, .article-content > h3 sub, .article-content > h3 sup, .article-content > h4 sub, .article-content > h4 sup, .article-content > h5 sub, .article-content > h5 sup, .article-content > h6 sub, .article-content > h6 sup, .article-content > p sub, .article-content > p sup, .article-content > pre sub, .article-content > pre sup, .article-content > address sub, .article-content > address sup {
     font-size: 1em; }
   .article-content > h1 mark, .article-content > h2 mark, .article-content > h3 mark, .article-content > h4 mark, .article-content > h5 mark, .article-content > h6 mark, .article-content > p mark, .article-content > pre mark, .article-content > address mark {
-    background-color: #CFB53B
+    background-color: #000000;
     color: white; }
   .article-content #output-format-list, .article-content #tags-list, .article-content #collection-list {
     text-decoration: none;
@@ -106,12 +106,12 @@ article p#simple-pages-breadcrumbs {
       letter-spacing: 0.2em;
       padding: 5px 5px;
       margin: 0 10px 10px 0;
-      background-color: #CFB53B
+      background-color: #000000;
       color: white;
       display: inline-block;
       line-height: 1em; }
       .article-content #output-format-list a:hover, .article-content #tags-list a:hover, .article-content #collection-list a:hover {
-        background-color: #8A0011; }
+        background-color: #CFB53B; }
 
 .article-description-tag, .item-description-tag, .collection-description-tag {
   margin-bottom: 1.5em; }
@@ -128,13 +128,13 @@ article p#simple-pages-breadcrumbs {
     text-decoration: none !important;
     display: inline-block;
     color: white;
-    background-color: #CFB53B
+    background-color: #000000;
     padding: 3px 5px;
     margin: 3px;
     font-size: 0.8em;
     letter-spacing: 0.1em; }
     .article-description-tag a:hover, .item-description-tag a:hover, .collection-description-tag a:hover {
-      background-color: #8A0011;
+      background-color: #CFB53B;
       color: white; }
   .article-description-tag ul, .item-description-tag ul, .collection-description-tag ul {
     padding: 0; }
@@ -166,12 +166,12 @@ article p#simple-pages-breadcrumbs {
     @extent .sans-serif-400;
     font-size: 0.7em;
     letter-spacing: 0.3em;
-    border: 1px solid #CFB53B
+    border: 1px solid #000000;
     border-radius: none;
     margin: 0 auto;
     display: block; }
     .drawer-above button.expand-advanced-search.closed {
-      color: #CFB53B
+      color: #000000;
       background-color: white; }
       .drawer-above button.expand-advanced-search.closed .glyphicon-menu-down {
         display: inline-block; }
@@ -179,17 +179,17 @@ article p#simple-pages-breadcrumbs {
         display: none; }
       .drawer-above button.expand-advanced-search.closed:hover, .drawer-above button.expand-advanced-search.closed:focus {
         color: white;
-        background-color: #CFB53B }
+        background-color: #000000; }
     .drawer-above button.expand-advanced-search.open {
       color: white;
-      background-color: #CFB53B }
+      background-color: #000000; }
       .drawer-above button.expand-advanced-search.open .glyphicon-menu-down {
         display: none; }
       .drawer-above button.expand-advanced-search.open .glyphicon-menu-up {
         display: inline-block; }
       .drawer-above button.expand-advanced-search.open:hover, .drawer-above button.expand-advanced-search.open:focus {
         color: white;
-        background-color: #8A0011; }
+        background-color: #CFB53B; }
 
 .search-results {
   width: 1200px;
@@ -207,12 +207,12 @@ article p#simple-pages-breadcrumbs {
     letter-spacing: 0.1em;
     display: inline-block;
     color: white;
-    background-color: #CFB53B
+    background-color: #000000;
     padding: 3px 10px;
     margin: 5px 10px 5px 0; }
     .browse-options a:hover, .item-search-filters a:hover, .sort-links a:hover, .outputs a:hover {
       color: white;
-      background-color: #8A0011; }
+      background-color: #CFB53B; }
   .browse-options span, .item-search-filters span, .sort-links span, .outputs span {
     text-align: center;
     font-size: 1em;
@@ -240,13 +240,13 @@ article p#simple-pages-breadcrumbs {
   cursor: pointer;
   border: 1px solid #c0c0c0; }
   .exhibit-item:hover {
-    background-color: #CFB53B
+    background-color: #000000;
     color: white !important; }
     .exhibit-item:hover .tags a {
       color: white;
-      background-color: #8A0011; }
+      background-color: #CFB53B; }
       .exhibit-item:hover .tags a:hover {
-        color: #CFB53B
+        color: #000000;
         background-color: white; }
   .exhibit-item > img {
     width: 100%;
@@ -283,13 +283,13 @@ article p#simple-pages-breadcrumbs {
     text-decoration: none !important;
     display: inline-block;
     color: white;
-    background-color: #CFB53B
+    background-color: #000000;
     padding: 3px 5px;
     margin: 3px;
     font-size: 0.8em;
     letter-spacing: 0.1em; }
     .article-description-tag a:hover, .item-description-tag a:hover, .collection-description-tag a:hover {
-      background-color: #8A0011;
+      background-color: #CFB53B;
       color: white; }
   .article-description-tag ul, .item-description-tag ul, .collection-description-tag ul {
     padding: 0; }
@@ -309,13 +309,13 @@ article p#simple-pages-breadcrumbs {
     display: block;
     height: 100%;
     text-transform: uppercase;
-    color: #CFB53B
-    border: 2px solid #CFB53B
+    color: #000000;
+    border: 2px solid #000000;
     font-size: 1.5em;
     text-decoration: none;
     letter-spacing: 0.1em; }
     .multi-item-files :not(div[class*="application-pdf"], div[class*="image-"]) a:hover {
-      background-color: #CFB53B
+      background-color: #000000;
       color: white; }
 
 .single-item-files .item-file {
@@ -342,13 +342,13 @@ article p#simple-pages-breadcrumbs {
   text-align: center; }
   .single-item-files :not(div[class*="application-pdf"], div[class*="image-"]) a {
     text-transform: uppercase;
-    color: #CFB53B
+    color: #000000;
     font-size: 1.5em;
     text-decoration: none;
     padding: 5px 15px;
     letter-spacing: 0.1em; }
     .single-item-files :not(div[class*="application-pdf"], div[class*="image-"]) a:hover {
-      background-color: #CFB53B
+      background-color: #000000;
       color: white;
       border-radius: 5px; }
 
@@ -367,13 +367,13 @@ article p#simple-pages-breadcrumbs {
     text-decoration: none !important;
     display: inline-block;
     color: white;
-    background-color: #CFB53B
+    background-color: #000000;
     padding: 3px 5px;
     margin: 3px;
     font-size: 0.8em;
     letter-spacing: 0.1em; }
     .article-description-tag a:hover, .item-description-tag a:hover, .collection-description-tag a:hover {
-      background-color: #8A0011;
+      background-color: #CFB53B;
       color: white; }
   .article-description-tag ul, .item-description-tag ul, .collection-description-tag ul {
     padding: 0; }
@@ -407,7 +407,7 @@ article p#simple-pages-breadcrumbs {
   height: 100vh;
   widows: 100vh;
   opacity: 0.9;
-  background-color: #8A0011; }
+  background-color: #CFB53B; }
 
 #nav-drawer-toggle:checked ~ .navigation-button {
   top: calc(40vh + 160px + 8px); }
@@ -434,7 +434,7 @@ article p#simple-pages-breadcrumbs {
   /* Standard */
   transition: top 0.3s ease-in-out;
   width: 60px;
-  background-color: #CFB53B
+  background-color: #000000;
   display: block;
   padding-top: 20px;
   padding-bottom: 15px;
@@ -445,10 +445,10 @@ article p#simple-pages-breadcrumbs {
   line-height: 0.5em;
   letter-spacing: 0.3em;
   text-align: center;
-  border-bottom: 8px solid #8A0011; }
+  border-bottom: 8px solid #CFB53B; }
 
 .nav-container {
-  border-bottom: 8px solid #CFB53B
+  border-bottom: 8px solid #000000;
   background-color: white;
   padding: 80px 0; }
 
@@ -459,7 +459,7 @@ nav {
     color: #4a4a4a; }
     nav a:hover {
       text-decoration: none;
-      color: #CFB53B }
+      color: #000000; }
   nav p {
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -502,9 +502,9 @@ nav {
       left: 0;
       padding-top: 30px; }
       nav #search-container form .show-advanced.button:hover {
-        color: #CFB53B }
+        color: #000000; }
       nav #search-container form .show-advanced.button:hover, nav #search-container form .show-advanced.button:active {
-        color: #CFB53B }
+        color: #000000; }
       nav #search-container form .show-advanced.button:after {
         font-family: 'Glyphicons Halflings';
         content: "\e011";
@@ -575,7 +575,7 @@ nav {
         -webkit-box-shadow: none;
         outline: none; }
       nav #search-container form #submit_search:hover, nav #search-container form #submit_search.active {
-        color: #CFB53B }
+        color: #000000; }
       nav #search-container form #submit_search:after {
         font-family: 'Glyphicons Halflings';
         content: "\e003";
@@ -605,7 +605,7 @@ nav {
 
 .homepage-intro {
   color: white;
-  background-color: #8A0011;
+  background-color: #CFB53B;
   height: 100vh; }
   .homepage-intro > p {
     font-size: 1.5em;
@@ -658,7 +658,7 @@ nav {
       -o-transition: opacity 0.2s ease-in-out;
       /* Standard */
       transition: opacity 0.2s ease-in-out;
-      color: #CFB53B
+      color: #000000;
       text-align: center; }
       .highlight-jumbotron .section .front .container {
         width: 60%;
@@ -714,7 +714,7 @@ nav {
         margin-top: 50px; }
         .highlight-jumbotron .section .back a:hover {
           text-decoration: none;
-          color: #8A0011;
+          color: #CFB53B;
           background-color: white; }
     .highlight-jumbotron .section:hover .back {
       opacity: 1; }
@@ -784,7 +784,7 @@ input[type=checkbox].checkbox-hidden {
       @include box-shadow(none);
       outline: none;
     }
-
+    
     &:hover {
       color: white;
       background-color: $dark-grey;
@@ -864,7 +864,7 @@ input[type=checkbox].checkbox-hidden {
       -webkit-box-shadow: none;
       outline: none; }
     #advanced-search-form button[type="submit"]:hover, #advanced-search-form button[type="submit"].active {
-      color: #CFB53B }
+      color: #000000; }
   #advanced-search-form button.remove_search {
     text-align: center;
     width: 2em;
@@ -975,11 +975,11 @@ footer {
     color: #4a4a4a; }
   footer #footer-text a {
     text-decoration: none;
-    color: #CFB53B
+    color: #000000;
     padding: 3px 5px; }
     footer #footer-text a:hover {
       text-decoration: none;
-      background-color: #CFB53B
+      background-color: #000000;
       color: white;
       border-radius: 3px; }
 
@@ -998,13 +998,13 @@ footer {
     text-decoration: none !important;
     display: inline-block;
     color: white;
-    background-color: #CFB53B
+    background-color: #000000;
     padding: 3px 5px;
     margin: 3px;
     font-size: 0.8em;
     letter-spacing: 0.1em; }
     .article-description-tag a:hover, .item-description-tag a:hover, .collection-description-tag a:hover {
-      background-color: #8A0011;
+      background-color: #CFB53B;
       color: white; }
   .article-description-tag ul, .item-description-tag ul, .collection-description-tag ul {
     padding: 0; }
@@ -1030,7 +1030,7 @@ nav#exhibit-pages {
     font-size: 1.5em !important; }
   .exhibit-block .gallery .exhibit-item:hover, .exhibit-block gallery-showcase:hover {
     color: white;
-    background-color: #CFB53B }
+    background-color: #000000; }
   .exhibit-block > h1, .exhibit-block > h2, .exhibit-block > h3, .exhibit-block > h4, .exhibit-block > h5, .exhibit-block > h6 {
     line-height: 100%;
     margin-bottom: 0.3em;
@@ -1054,15 +1054,15 @@ nav#exhibit-pages {
   .exhibit-block > i {
     font-style: italic; }
   .exhibit-block > em {
-    color: #CFB53B }
+    color: #000000; }
   .exhibit-block > sub, .exhibit-block > sup {
     font-size: 1em; }
   .exhibit-block > mark {
-    background-color: #CFB53B
+    background-color: #000000;
     color: white; }
   .exhibit-block > quote {
     font-style: italic;
-    color: #CFB53B
+    color: #000000;
     display: block;
     font-size: 2.5em;
     margin-bottom: 1.6875em;

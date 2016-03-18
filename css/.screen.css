@@ -54,11 +54,11 @@ body{
 }
 
 .navigation-button {
-  background-color: #C33244;
+  background-color: #CFB53B
   display: block;
   padding-top: 20px;
   padding-bottom: 15px;
-  
+
   font-size: 1em;
   color: white;
   line-height: 0.5em;
@@ -95,7 +95,7 @@ body{
 .featured-items-description {
   color: white;
   display: block;
-  background-color: #C33244;
+  background-color: #CFB53B
   font-size: 1.25em;
   line-height: 1.875em;
   padding: 20px 40px 40px 40px !important;
@@ -161,7 +161,7 @@ article > quote, .article-content > quote, .article-header > quote {
   font-family: 'Cardo', 'times new roman', serif;
   font-weight: 400;
   font-style: italic;
-  color: #C33244;
+  color: #CFB53B
   display: block;
   font-size: 2em;
   margin-bottom: 1.6875em;
@@ -175,7 +175,7 @@ article > quote, .article-content > quote, .article-header > quote {
 }
 
 .exhibit-item:hover {
-  background-color: #C33244;
+  background-color: #CFB53B
   color: white !important;
 }
 
@@ -234,7 +234,7 @@ article > quote, .article-content > quote, .article-header > quote {
   font-weight: 400;
   letter-spacing: 0.5em;
   font-size: 0.8em;
-  
+
   border-top: 1px solid #4a4a4a;
   border-bottom: 1px solid #4a4a4a;
   padding: 2px 0 2px 0;

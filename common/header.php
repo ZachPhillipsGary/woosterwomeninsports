@@ -73,7 +73,7 @@
       </div><!-- end of container-->
     </div><!-- end of nav-container-->
   </div><!-- end of nav-drawer-->
-  <nav class="navbar navbar-default">
+  <div class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Women in Sport and Physical Education</a>
@@ -84,7 +84,7 @@
         echo $menu;
       ?>
   </div>
-</nav>
+</div>
 
   <label class="hidden-lg hidden-md hidden-xl navigation-button" for="nav-drawer-toggle">
     <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>

@@ -73,14 +73,22 @@
       </div><!-- end of container-->
     </div><!-- end of nav-container-->
   </div><!-- end of nav-drawer-->
-  <ul class="nav nav-tabs">
-    <?php
-      $menu = public_nav_main();
-      $menu -> setUlClass('');
-      echo $menu;
-    ?>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <?php
+        $menu = public_nav_main();
+        $menu -> setUlClass('');
+        echo $menu;
+      ?>
+    </ul>
+  </div>
+</nav>
 
-</ul>
   <label class="navigation-button" for="nav-drawer-toggle">
     <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
   </label>

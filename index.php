@@ -46,7 +46,8 @@
     <!-- section 1 -->
     <div class="section">
       <?php if (!empty($sectionBackgroundImages[0])): ?>
-        <img src="<?php echo $themeUploadsPath.$sectionBackgroundImages[0] ?>" class="background">
+        <!-- do a hacky fix for now -->
+        <img src="<?php echo "./".$themeUploadsPath.$sectionBackgroundImages[0] ?>" class="background">
       <?php else: ?>
         <div class="background"></div>
       <?php endif ?>

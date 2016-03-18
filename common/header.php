@@ -76,7 +76,7 @@
   <div class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Women in Sport and Physical Education</a>
+      <a class="navbar-brand" href="./">Women in Sport and Physical Education</a>
     </div>
       <?php
         $menu = public_nav_main();

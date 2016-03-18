@@ -76,8 +76,7 @@
   <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Women in Sport and Physical Education
-at The College of Wooster</a>
+      <a class="navbar-brand" href="#">Women in Sport and Physical Education</a>
     </div>
       <?php
         $menu = public_nav_main();
@@ -87,6 +86,6 @@ at The College of Wooster</a>
   </div>
 </nav>
 
-  <label class="navigation-button" for="nav-drawer-toggle">
+  <label class="hidden-lg hidden-md hidden-xl navigation-button" for="nav-drawer-toggle">
     <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
   </label>

@@ -1,11 +1,11 @@
-<?php 
+<?php
   echo head();
   function themeOptions($optionName) {
     $themeOptionPrefix1 = 'homepage_jumbotron_section_1_';
     $themeOptionPrefix2 = 'homepage_jumbotron_section_2_';
     $themeOptionPrefix3 = 'homepage_jumbotron_section_3_';
     $themeOptionPrefix4 = 'homepage_jumbotron_section_4_';
-    
+
     return array(
       get_theme_option($themeOptionPrefix1.$optionName),
       get_theme_option($themeOptionPrefix2.$optionName),
@@ -27,21 +27,21 @@
   function showIntro() {
     $themeOption = 'homepage_introduction_content';
     $introContent = get_theme_option($themeOption);
-    
+
     echo __($introContent);
   }
 ?>
 
 <div class="container-fluid highlight-jumbotron">
-  
+
   <div class="col-lg-4 col-lg-push-4 col-md-12 homepage-intro">
     <div class="homepage-logo">
-      <p class="sans-serif-800">EXPANDING</p>
-      <p class="serif-400">ARCHIVE</p>
+      <p class="sans-serif-800">Women in Sport and Physical Education</p>
+      <p class="serif-400">at The College of Wooster</p>
     </div>
     <p class="serif-400"><?php showIntro() ?></p>
   </div>
-  
+
   <div class="col-lg-4 col-lg-pull-4 col-md-6 col-sm-12">
     <!-- section 1 -->
     <div class="section">
@@ -50,7 +50,7 @@
       <?php else: ?>
         <div class="background"></div>
       <?php endif ?>
-      
+
       <div class="front">
         <div class="container">
           <span class="glyphicon <?php echo $sectionTitleIcons[0] ?>" aria-hidden="true"></span>
@@ -64,7 +64,7 @@
         <a href="<?php echo $sectionLinks[0] ?>">LEARN MORE</a>
       </div>
     </div>
-    
+
     <!-- section 2 -->
     <div class="section">
     <?php if (!empty($sectionBackgroundImages[1])): ?>
@@ -86,9 +86,9 @@
         <a href="<?php echo $sectionLinks[1] ?>">LEARN MORE</a>
       </div>
     </div>
-    
-  </div>  
-  
+
+  </div>
+
   <div class="col-lg-4 col-md-6 col-sm-12">
     <!-- section 3 -->
     <div class="section">
@@ -111,7 +111,7 @@
         <a href="<?php echo $sectionLinks[2] ?>">LEARN MORE</a>
       </div>
     </div>
-    
+
     <!-- section 4 -->
     <div class="section">
     <?php if (!empty($sectionBackgroundImages[3])): ?>

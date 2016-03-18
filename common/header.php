@@ -74,9 +74,12 @@
     </div><!-- end of nav-container-->
   </div><!-- end of nav-drawer-->
   <ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="#">Home</a></li>
-  <li role="presentation"><a href="#">Profile</a></li>
-  <li role="presentation"><a href="#">Messages</a></li>
+    <?php
+      $menu = public_nav_main();
+      $menu -> setUlClass('');
+      echo $menu;
+    ?>
+
 </ul>
   <label class="navigation-button" for="nav-drawer-toggle">
     <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>

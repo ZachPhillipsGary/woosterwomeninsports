@@ -78,14 +78,11 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="#">WebSiteName</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
       <?php
         $menu = public_nav_main();
-        $menu -> setUlClass('');
+        $menu -> setUlClass('nav navbar-nav');
         echo $menu;
       ?>
-    </ul>
   </div>
 </nav>
 

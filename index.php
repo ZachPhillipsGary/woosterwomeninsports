@@ -33,7 +33,7 @@
 ?>
 
 <div class="container-fluid highlight-jumbotron">
-
+<!--
   <div class="col-lg-4 col-lg-push-4 col-md-12 homepage-intro">
     <div class="homepage-logo">
       <p class="sans-serif-800">Women in Sport and Physical Education</p>
@@ -41,7 +41,7 @@
     </div>
     <p class="serif-400"><?php showIntro() ?></p>
   </div>
-
+-->
   <div class="col-lg-4 col-lg-pull-4 col-md-6 col-sm-12">
     <!-- section 1 -->
     <div class="section">
@@ -51,7 +51,6 @@
       <?php else: ?>
         <div class="background"></div>
       <?php endif ?>
-
       <div class="front">
         <div class="container">
           <span class="glyphicon <?php echo $sectionTitleIcons[0] ?>" aria-hidden="true"></span>
@@ -59,7 +58,6 @@
           <p class="serif-400"><?php echo $sectionTitle2s[0] ?></p>
         </div>
       </div>
-
       <div class="back">
         <p><?php echo $sectionInfos[0] ?></p>
         <a href="<?php echo $sectionLinks[0] ?>">LEARN MORE</a>

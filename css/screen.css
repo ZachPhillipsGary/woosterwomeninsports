@@ -1106,4 +1106,7 @@ body {
   background-color: #4a4a4a;
   color: white; }
 
+#search-form {
+  width:20px;
+}
 /*# sourceMappingURL=screen.css.map */

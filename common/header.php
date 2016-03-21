@@ -75,7 +75,7 @@
   </div><!-- end of nav-drawer-->
   <div class="navbar navbar-default">
   <div class="container-fluid">
-    <div class="navbar-header">
+    <div class="hidden-xs hidden-xs navbar-header">
       <a class="navbar-brand" href="./">Women in Sport and Physical Education</a>
     </div>
       <?php
@@ -83,6 +83,7 @@
         $menu -> setUlClass('nav navbar-nav');
         echo $menu;
       ?>
+      <div id="search-menu">
       <?php
         if (get_theme_option('use_advanced_search') === null ||
             get_theme_option('use_advanced_search')):
@@ -92,6 +93,7 @@
           echo search_form();
         endif;
       ?>
+    </div>
   </div>
 </div>
 

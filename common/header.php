@@ -83,7 +83,11 @@
         $menu -> setUlClass('nav navbar-nav');
         echo $menu;
       ?>
-      <a onClick="$('#search-menu').toggle();">Search</a>
+      <ul>
+        <li>
+      <a href="javscript:$('#search-menu').toggle();">Search</a>
+    </li>
+  </ul>
       <div id="search-menu">
       <?php
         if (get_theme_option('use_advanced_search') === null ||

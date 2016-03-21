@@ -1107,6 +1107,6 @@ body {
   color: white; }
 
 #search-form {
-  width:20px;
+  display:none;
 }
 /*# sourceMappingURL=screen.css.map */

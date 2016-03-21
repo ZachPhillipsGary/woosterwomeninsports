@@ -33,15 +33,15 @@
 ?>
 
 <div class="container-fluid highlight-jumbotron">
-<!--
+<
   <div class="col-lg-4 col-lg-push-4 col-md-12 homepage-intro">
+    <!--
     <div class="homepage-logo">
       <p class="sans-serif-800">Women in Sport and Physical Education</p>
       <p class="serif-400">at The College of Wooster</p>
     </div>
-    <p class="serif-400"><?php showIntro() ?></p>
+    <p class="serif-400"><?php showIntro() ?></p> -->
   </div>
--->
   <div class="col-lg-4 col-lg-pull-4 col-md-6 col-sm-12">
     <!-- section 1 -->
     <div class="section">

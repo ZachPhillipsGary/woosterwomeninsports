@@ -83,6 +83,15 @@
         $menu -> setUlClass('nav navbar-nav');
         echo $menu;
       ?>
+      <?php
+        if (get_theme_option('use_advanced_search') === null ||
+            get_theme_option('use_advanced_search')):
+          echo search_form(array('show_advanced' => true,
+                                 'submit_value' => 'Search'));
+        else:
+          echo search_form();
+        endif;
+      ?>
   </div>
 </div>
 

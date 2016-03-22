@@ -4,12 +4,12 @@
 ?>
 
 <div class="container">
-  
+
   <div class="section-header col-md-10 col-md-offset-1">
     <small>-BROWSE-</small>
     <h1>Exhibits <?php echo __('(%s total)', $total_results); ?></h1>
   </div>
-  
+
 </div>
 
 <?php if (count($exhibits) > 0): ?>
@@ -62,8 +62,8 @@
     // layout Isotope after each image loads
     $grid.imagesLoaded().progress( function() {
       $grid.masonry();
-    }); 
-    
+    });
+
   });
 </script>
 

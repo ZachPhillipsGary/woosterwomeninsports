@@ -254,3 +254,7 @@ article > quote, .article-content > quote, .article-header > quote {
 .item-description-tag > img, .article-description-tag > img {
   width: 100%;
 }
+div .col-md-4 .col-sm-6 .front-highlights {
+  padding-left: 15px;
+  padding-right: 15px
+}

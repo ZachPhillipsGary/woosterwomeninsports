@@ -37,7 +37,19 @@
     <small>-ITEM-</small>
     <h1><?php echo $title ?></h1>
   </div><!-- end of section-header -->
+  <?php
+    if (get_theme_option('Item FileGallery') == 0 && metadata('item', 'has files')) {
+      if (metadata('item', 'file_count') > 1) {
+        echo __('<div class="multi-item-files col-lg-8 col-lg-offset-2 col-md-12">');
+        echo files_for_item(array('imageSize' => 'square_thumbnail'), array('class' => 'item-file col-md-6'));
+      } else {
+        echo __('<div class="single-item-files col-lg-8 col-lg-offset-2 col-md-12">');
+        echo files_for_item(array('imageSize' => 'fullsize'));
+      }
+      echo __('</div><!-- end of item-files -->');
+    }
 
+  ?>
   <article class="col-md-12">
     <div class="col-md-8 col-md-offset-2">
       <div class="article-content">
@@ -49,53 +61,41 @@
       </div><!-- end of article-content -->
     </div>
   </article>
-      
-  <?php 
-    if (get_theme_option('Item FileGallery') == 0 && metadata('item', 'has files')) {
-      if (metadata('item', 'file_count') > 1) {
-        echo __('<div class="multi-item-files col-lg-8 col-lg-offset-2 col-md-12">');
-        echo files_for_item(array('imageSize' => 'square_thumbnail'), array('class' => 'item-file col-md-6'));
-      } else {
-        echo __('<div class="single-item-files col-lg-8 col-lg-offset-2 col-md-12">');
-        echo files_for_item(array('imageSize' => 'fullsize'));
-      }
-      echo __('</div><!-- end of item-files -->'); 
-    }
-  
-  ?>
-  
+
+
+
 
   <div class="item-description col-lg-12">
     <div class="col-lg-2 col-md-3 col-sm-6 col-lg-offset-2">
-      <?php 
-        showItemDescriptionTag('TITLE', $title); 
-        showItemDescriptionTag('SUBJECT', $subject); 
-        showItemDescriptionTag('DATE', $date); 
+      <?php
+        showItemDescriptionTag('TITLE', $title);
+        showItemDescriptionTag('SUBJECT', $subject);
+        showItemDescriptionTag('DATE', $date);
       ?>
     </div>
 
     <div class="col-lg-2 col-md-3 col-sm-6">
-      <?php 
+      <?php
         showItemDescriptionTag('CREATOR', $creators);
-        showItemDescriptionTag('CONTRIBUTOR', $contributors); 
-        showItemDescriptionTag('PUBLISHER', $publisher); 
-      ?>
-    </div>
-    
-    <div class="col-lg-2 col-md-3 col-sm-6">
-      <?php 
-        showItemDescriptionTag('TYPE', $type); 
-        showItemDescriptionTag('FORMAT', $format);
-        showItemDescriptionTag('LANGUAGE', $language); 
+        showItemDescriptionTag('CONTRIBUTOR', $contributors);
+        showItemDescriptionTag('PUBLISHER', $publisher);
       ?>
     </div>
 
     <div class="col-lg-2 col-md-3 col-sm-6">
-      <?php 
-        showItemDescriptionTag('RIGHTS', $rights); 
+      <?php
+        showItemDescriptionTag('TYPE', $type);
+        showItemDescriptionTag('FORMAT', $format);
+        showItemDescriptionTag('LANGUAGE', $language);
       ?>
     </div>
-    
+
+    <div class="col-lg-2 col-md-3 col-sm-6">
+      <?php
+        showItemDescriptionTag('RIGHTS', $rights);
+      ?>
+    </div>
+
   </div><!-- end of item-description -->
 </div><!-- end of item container -->
 

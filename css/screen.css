@@ -1114,7 +1114,7 @@ body {
   div .col-md-4 .col-sm-6 .front-highlights {
     padding-left: 15px;
     padding-right: 15px }
-    woo-yellow {
-      background-color: #FFCC00;
+    .woo-yellow {
+      background-color: #FFCC00 !important;
     }
 /*# sourceMappingURL=screen.css.map */

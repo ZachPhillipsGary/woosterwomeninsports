@@ -1078,7 +1078,9 @@ body {
   padding: 0px;
   height: 100%;
   width: 100%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #000;
+}
 
 .container-fixed, .container-fixed-top, .container-fixed-bottom, .container-fixed-center {
   position: fixed;
@@ -1112,4 +1114,7 @@ body {
   div .col-md-4 .col-sm-6 .front-highlights {
     padding-left: 15px;
     padding-right: 15px }
+    woo-yellow {
+      background-color: #FFCC00;
+    }
 /*# sourceMappingURL=screen.css.map */

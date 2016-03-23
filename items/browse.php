@@ -4,11 +4,24 @@
 ?>
 
 <div class="drawer-under">
-  <?php 
+  <?php
     echo $this->partial('items/search-form.php',
-                        array('formAttributes' => array('id'=>'advanced-search-form'))); 
+                        array('formAttributes' => array('id'=>'advanced-search-form')));
   ?>
 </div><!-- end of drawer-under -->
+<div class="navbar navbar-default">
+<div class="container-fluid">
+  <div class="hidden-xs hidden-xs navbar-header">
+    <a class="navbar-brand" href="../">Women in Sport and Physical Education</a>
+  </div>
+    <?php
+      $menu = public_nav_main();
+      $menu -> setUlClass('nav navbar-nav');
+      echo $menu;
+    ?>
+
+</div>
+</div>
 
 <div class="drawer-above">
   <div class="container">
@@ -24,7 +37,7 @@
 
     <div class="sort-links col-md-8 col-md-offset-2">
       <span class="sort-label">-SORT BY-</span>
-      <?php 
+      <?php
         echo pagination_links();
         if ($total_results > 0) {
           $sortLinks[__('Title')] = 'Dublin Core,Title';
@@ -35,13 +48,13 @@
       ?>
     </div><!-- end of sort-links -->
 
-    
+
 
   </div><!-- end of container -->
 
   <div class="search-results">
     <?php foreach (loop('items') as $item): ?>
-      <?php 
+      <?php
         $itemLink = record_url(get_current_record('item'));
         $itemImageTag = item_image('square_thumbnail');
         $itemTitle = metadata('item', array('Dublin Core', 'Title'));
@@ -65,13 +78,13 @@
   <footer role="contentinfo" class="jumbotron">
     <div class="container">
       <div id="footer-text" class="col-md-8 col-md-offset-2">
-        <?php 
-          echo get_theme_option('Footer Text'); 
-          if ((get_theme_option('Display Footer Copyright') == 1) && 
+        <?php
+          echo get_theme_option('Footer Text');
+          if ((get_theme_option('Display Footer Copyright') == 1) &&
               $copyright = option('copyright')) {
             echo __('<p>'.$copyright.'</p>');
         }
-          echo __('<p>Proudly powered by <a href="http://omeka.org">Omeka</a>.</p>'); 
+          echo __('<p>Proudly powered by <a href="http://omeka.org">Omeka</a>.</p>');
         ?>
       </div><!-- end of footer-text -->
     </div><!-- end of container -->
@@ -84,7 +97,7 @@
 <script type="text/javascript">
   jQuery(document).ready(function () {
     Omeka.Search.activateSearchButtons();
-    
+
     // init Masonry
     var $grid = $('.search-results').masonry({
       itemSelector: '.exhibit-item',
@@ -94,26 +107,26 @@
     // layout Isotope after each image loads
     $grid.imagesLoaded().progress( function() {
       $grid.masonry();
-    }); 
-    
+    });
+
     var expandAdvancedSearch = $('.drawer-above button.expand-advanced-search');
     var addSearchButton = $('#search-narrow-by-fields button.add_search');
-    
+
     var drawerAbove = $('.drawer-above');
     var drawerUnder = $('.drawer-under');
     var drawerUnderMargin = 120;
     var drawerAboveOriginalTop = 210;
-    
+
     var updateDrawerAbovePosition = function () {
       if (expandAdvancedSearch.hasClass('open')) {
         drawerAbove.css({top: drawerUnderMargin + drawerUnder.height()});
       }
     };
-    
+
     var updateRemoveSearchButtons = function () {
       $('#search-narrow-by-fields button.remove_search').click(updateDrawerAbovePosition);
     };
-    
+
     expandAdvancedSearch.click(function () {
         if (expandAdvancedSearch.hasClass('closed')) {
         expandAdvancedSearch.removeClass('closed');
@@ -125,18 +138,18 @@
         drawerAbove.css({top: drawerAboveOriginalTop});
       }
     });
-    
+
     addSearchButton.click(function () {
       if (expandAdvancedSearch.hasClass('open')) {
         updateRemoveSearchButtons();
       }
       updateDrawerAbovePosition();
     });
-    
+
   });
 </script>
 
-<?php 
-  fire_plugin_hook('public_items_browse', array('items'=>$items, 'view' => $this)); 
+<?php
+  fire_plugin_hook('public_items_browse', array('items'=>$items, 'view' => $this));
   echo foot(array('displayFooter' => false));
 ?>

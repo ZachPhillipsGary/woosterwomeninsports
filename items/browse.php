@@ -9,19 +9,6 @@
                         array('formAttributes' => array('id'=>'advanced-search-form')));
   ?>
 </div><!-- end of drawer-under -->
-<div class="navbar navbar-default">
-<div class="container-fluid">
-  <div class="hidden-xs hidden-xs navbar-header">
-    <a class="navbar-brand" href="../">Women in Sport and Physical Education</a>
-  </div>
-    <?php
-      $menu = public_nav_main();
-      $menu -> setUlClass('nav navbar-nav');
-      echo $menu;
-    ?>
-
-</div>
-</div>
 
 <div class="drawer-above">
   <div class="container">

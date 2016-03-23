@@ -73,7 +73,7 @@
       </div><!-- end of container-->
     </div><!-- end of nav-container-->
   </div><!-- end of nav-drawer-->
-  <div class="navbar navbar-default">
+  <div class="navbar navbar-default woo-yellow">
   <div class="container-fluid">
     <div class="hidden-xs hidden-xs navbar-header">
       <a class="navbar-brand" href="../">Women in Sport and Physical Education</a>

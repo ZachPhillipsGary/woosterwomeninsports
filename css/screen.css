@@ -1102,8 +1102,11 @@ body {
   background-color: #4a4a4a;
   color: white; }
 
-::-moz-selection {
+::-moz-selectwion {
   background-color: #4a4a4a;
   color: white; }
+.front-highlights {
+  padding-left: 0px;
+  padding-right: 0px; }
 
 /*# sourceMappingURL=screen.css.map */

@@ -2,7 +2,19 @@
   $pageTitle = __('Browse Items');
   echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 ?>
+<div class="navbar navbar-default">
+<div class="container-fluid">
+  <div class="hidden-xs hidden-xs navbar-header">
+    <a class="navbar-brand" href="../">Women in Sport and Physical Education</a>
+  </div>
+    <?php
+      $menu = public_nav_main();
+      $menu -> setUlClass('nav navbar-nav');
+      echo $menu;
+    ?>
 
+</div>
+</div>
 <div class="drawer-under">
   <?php
     echo $this->partial('items/search-form.php',

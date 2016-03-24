@@ -80,8 +80,8 @@
   <div class="container-fluid">
     <div class="row">
       <div class=" col-md-8 ">
-    <div class="hidden-xs hidden-xs navbar-header collapse navbar-collapse">
-      <a class="navbar-brand" href="../">Women in Sport and Physical Education</a>
+    <div class="hidden-xs hidden-sm navbar-header collapse navbar-collapse">
+      <a class="navbar-brand" href=".../"/>Home</a>
     </div>
       <?php
         $menu = public_nav_main();
@@ -89,7 +89,8 @@
         echo $menu;
       ?>
     </div>
-     <div class="col-md-4">
+     <div role="search" class="col-md-4">
+       <span class="pull-right">
       <?php
         if (get_theme_option('use_advanced_search') === null ||
             get_theme_option('use_advanced_search')):
@@ -99,6 +100,7 @@
           echo search_form();
         endif;
       ?>
+      </span>
     </div>
     </div>
   </div>

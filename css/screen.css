@@ -1117,6 +1117,9 @@ body {
     .woo-yellow {
       background-color: #FFCC00;
     }
+  #search-form {
+    align:right;
+  }
 #query {
   width:200px;
 height:30px

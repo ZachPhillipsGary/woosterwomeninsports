@@ -1121,4 +1121,11 @@ body {
   width:200px;
 height:30px
 }
+span.current-page {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px
+}
 /*# sourceMappingURL=screen.css.map */

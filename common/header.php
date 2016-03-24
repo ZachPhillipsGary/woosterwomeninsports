@@ -81,7 +81,7 @@
     <div class="row">
       <div class=" col-md-8 ">
     <div class=" navbar-header collapse navbar-collapse">
-      <a class="navbar-brand" href=".../"/>Home</a>
+      <a class="navbar-brand" href="<?php echo public_url(); ?>"/>Home</a>
     </div>
       <?php
         $menu = public_nav_main();

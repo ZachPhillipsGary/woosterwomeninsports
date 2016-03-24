@@ -74,7 +74,7 @@
     </div><!-- end of nav-container-->
   </div><!-- end of nav-drawer-->
   <div class="container-fluid" style="background-color:#FFCC00;color:#000;height:100px;">
-  <h1><?php echo $title ?></h1>
+  <h1><?php echo option('site_title'); ?></h1>
   </div>
   <div data-spy="affix" data-offset-top="197" class="hidden-xs hidden-sm navbar navbar-inverse ">
   <div class="container-fluid">

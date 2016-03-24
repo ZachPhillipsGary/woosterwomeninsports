@@ -1115,6 +1115,9 @@ body {
     padding-left: 15px;
     padding-right: 15px }
     .woo-yellow {
-      background-color: #FFCC00 !important;
+      background-color: #FFCC00;
     }
+input#query {
+  width:100px;
+}
 /*# sourceMappingURL=screen.css.map */

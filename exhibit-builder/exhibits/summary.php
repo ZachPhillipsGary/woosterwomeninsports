@@ -13,7 +13,7 @@
     <small>-EXHIBITS SUMMARY-</small>
     <h1><?php echo $title ?></h1>
   </div><!-- end of section-header -->
-  
+
   <article>
     <div class="col-md-8 col-md-offset-2">
       <div class="article-content">
@@ -23,17 +23,22 @@
         <p><?php echo $credits; ?></p>
         <b>Tags</b>
         <div id="tags-list"><?php echo $tags; ?></div>
-        
+
       </div>
     </div>
   </article>
-  
-  
-  <nav id="exhibit-pages" class="col-md-8 col-md-offset-2">
-    <p>Exhibit Navigation</p>
+
+  <div class="dropdown">
+  <button id="exhibit-pages" class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Exhibit Navigation
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
     <?php echo $pageTree; ?>
-  </nav>
-  
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+  </ul>
+</div>
+
+
 </div>
 
 

@@ -8,22 +8,7 @@
                         array('formAttributes' => array('id'=>'advanced-search-form')));
   ?>
 </div><!-- end of drawer-under -->
-<div class="container-fluid" style="background-color:#FFCC00;color:#000;height:100px;">
-<h1>The College of Wooster</h1>
-</div>
-<div data-spy="affix" data-offset-top="197" class="navbar navbar-inverse ">
-<div class="container-fluid">
-  <div class="hidden-xs hidden-xs navbar-header collapse navbar-collapse">
-    <a class="navbar-brand" href="../">Women in Sport and Physical Education</a>
-  </div>
-    <?php
-      $menu = public_nav_main();
-      $menu -> setUlClass('nav navbar-nav');
-      echo $menu;
-    ?>
 
-</div>
-</div>
 <div class="drawer-above">
   <div class="container">
     <button class="expand-advanced-search closed">

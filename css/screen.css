@@ -1117,7 +1117,8 @@ body {
     .woo-yellow {
       background-color: #FFCC00;
     }
-input#query {
-  width:100px;
+input #query {
+  width:200px;
+height:30px
 }
 /*# sourceMappingURL=screen.css.map */

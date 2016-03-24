@@ -1117,9 +1117,9 @@ body {
     .woo-yellow {
       background-color: #FFCC00;
     }
-  #search-form {
-    align:right;
-  }
+ul .nav .navbar-nav {
+  padding-right: 30px;
+}
 #query {
   width:200px;
 height:30px

@@ -1,4 +1,3 @@
-abcd
 <?php
   $pageTitle = __('Search') . ' ' . __('(%s total)', $total_results);
   echo head(array('title' => $pageTitle, 'bodyclass' => 'search'));

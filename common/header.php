@@ -76,11 +76,11 @@
   <div class="container-fluid" style="background-color:#FFCC00;color:#000;height:100px;">
   <h1>The College of Wooster</h1>
   </div>
-  <div data-spy="affix" data-offset-top="197" class="navbar navbar-inverse ">
+  <div data-spy="affix" data-offset-top="197" class="hidden-xs hidden-sm navbar navbar-inverse ">
   <div class="container-fluid">
     <div class="row">
       <div class=" col-md-8 ">
-    <div class="hidden-xs hidden-sm navbar-header collapse navbar-collapse">
+    <div class=" navbar-header collapse navbar-collapse">
       <a class="navbar-brand" href=".../"/>Home</a>
     </div>
       <?php

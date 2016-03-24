@@ -6,6 +6,8 @@
   $credits = metadata('exhibit', 'credits');
   $tags = tag_string('exhibit', 'exhibits', '');
   $pageTree = exhibit_builder_page_tree();
+  //add dropdown formatting to $pageTree
+  
 ?>
 
 <div class="container exhibit">

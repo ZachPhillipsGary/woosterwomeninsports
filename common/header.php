@@ -79,7 +79,7 @@
   <div data-spy="affix" data-offset-top="197" class="navbar navbar-inverse ">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-3 col-md-6 col-lg-4">
+      <div class=" col-md-8 ">
     <div class="hidden-xs hidden-xs navbar-header collapse navbar-collapse">
       <a class="navbar-brand" href="../">Women in Sport and Physical Education</a>
     </div>
@@ -89,7 +89,7 @@
         echo $menu;
       ?>
     </div>
-     <div class="col-sm-9 col-md-6 col-lg-8">
+     <div class="col-md-4">
       <?php
         if (get_theme_option('use_advanced_search') === null ||
             get_theme_option('use_advanced_search')):

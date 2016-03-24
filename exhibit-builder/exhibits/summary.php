@@ -31,11 +31,8 @@
   <div class="dropdown">
   <button id="exhibit-pages" class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Exhibit Navigation
   <span class="caret"></span></button>
-  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
     <?php echo $pageTree; ?>
-    <li role="presentation" class="divider"></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
-  </ul>
+
 </div>
 
 

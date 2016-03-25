@@ -1133,7 +1133,9 @@ span.current-page {
 @import url(https://fonts.googleapis.com/css?family=Averia+Libre:400,700italic);
 h1#siteTitleHeader {
 /*  font-family: 'Raleway', sans-serif; */
-font-family: 'Noto Sans', sans-serif;
-/*font-family: 'Averia Libre', cursive;*/
+/*font-family: 'Noto Sans', sans-serif; */
+font-family: 'Averia Libre', cursive;
+font-weight: 700;
+font-style: italic;
 }
 /*# sourceMappingURL=screen.css.map */

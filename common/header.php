@@ -39,7 +39,7 @@
     queue_js_file('imagesloaded.pkgd');
     echo head_js();
   ?>
-
+XKCD
 </head>
 
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>

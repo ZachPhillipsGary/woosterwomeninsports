@@ -1134,8 +1134,6 @@ span.current-page {
 h1#siteTitleHeader {
 /*  font-family: 'Raleway', sans-serif; */
 /*font-family: 'Noto Sans', sans-serif; */
-font-family: 'Averia Libre', cursive;
-font-weight: 700;
-font-style: italic;
+font-family: Cardo, 'Times New Roman', Times, serif;
 }
 /*# sourceMappingURL=screen.css.map */

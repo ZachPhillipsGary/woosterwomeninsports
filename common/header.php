@@ -74,18 +74,13 @@
     </div><!-- end of nav-container-->
   </div><!-- end of nav-drawer-->
   <div class="container-fluid" style="background-color:#FFCC00;color:#000;height:100px;">
-  <h1 id="siteTitleHeader"><?php echo option('site_title'); ?></h1>
+  <h1 id="siteTitleHeader"><a href="#"><?php echo option('site_title'); ?></a></h1>
   </div>
   <div data-spy="affix" data-offset-top="197" class="hidden-xs hidden-sm navbar navbar-inverse ">
   <div class="container-fluid">
     <div class="row">
       <div class=" col-md-8 ">
     <div class=" navbar-header collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li>
-      <a href="<?php echo public_url(); ?>"/>Home</a>
-    </li>
-  </ul>
     </div>
       <?php
         $menu = public_nav_main();

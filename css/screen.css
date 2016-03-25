@@ -1129,7 +1129,10 @@ span.current-page {
   border-radius: 15px
 }
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100italic,800italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Averia+Libre:400,700italic);
 h1#siteTitleHeader {
-  font-family: 'Raleway', sans-serif !important;
+/*  font-family: 'Raleway', sans-serif !important; */
+
+font-family: 'Averia Libre', cursive;
 }
 /*# sourceMappingURL=screen.css.map */

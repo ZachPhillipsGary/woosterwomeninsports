@@ -9,7 +9,7 @@
   ?>
 </div><!-- end of drawer-under -->
 
-<div class="drawer-above">
+<div>
   <div class="container">
     <button class="expand-advanced-search closed">
       <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>

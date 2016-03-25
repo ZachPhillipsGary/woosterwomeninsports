@@ -1128,11 +1128,12 @@ span.current-page {
   border: 1px solid #ddd;
   border-radius: 15px
 }
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700italic,700,400italic);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100italic,800italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Averia+Libre:400,700italic);
 h1#siteTitleHeader {
-/*  font-family: 'Raleway', sans-serif !important; */
-
-font-family: 'Averia Libre', cursive;
+/*  font-family: 'Raleway', sans-serif; */
+font-family: 'Noto Sans', sans-serif;
+/*font-family: 'Averia Libre', cursive;*/
 }
 /*# sourceMappingURL=screen.css.map */

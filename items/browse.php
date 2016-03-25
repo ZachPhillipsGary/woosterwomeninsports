@@ -2,7 +2,7 @@
   $pageTitle = __('Browse Items');
   echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 ?>
-<div class="drawer-under">
+<div>
   <?php
     echo $this->partial('items/search-form.php',
                         array('formAttributes' => array('id'=>'advanced-search-form')));

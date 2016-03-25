@@ -82,6 +82,9 @@
 
 <script type="text/javascript">
   jQuery(document).ready(function () {
+    $("button").click(function(){
+    $("p").toggle();
+    });
     Omeka.Search.activateSearchButtons();
 
     // init Masonry

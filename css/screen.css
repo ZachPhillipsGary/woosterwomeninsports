@@ -1132,6 +1132,7 @@ span.current-page {
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100italic,800italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Averia+Libre:400,700italic);
 h1#siteTitleHeader {
+  color: rgb(74, 74, 74);
 /*  font-family: 'Raleway', sans-serif; */
 /*font-family: 'Noto Sans', sans-serif; */
 font-family: Cardo, 'Times New Roman', Times, serif;

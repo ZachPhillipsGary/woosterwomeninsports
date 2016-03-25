@@ -5,12 +5,16 @@
     $themeOptionPrefix2 = 'homepage_jumbotron_section_2_';
     $themeOptionPrefix3 = 'homepage_jumbotron_section_3_';
     $themeOptionPrefix4 = 'homepage_jumbotron_section_4_';
+    $themeOptionPrefix5 = 'homepage_jumbotron_section_5_';
+    $themeOptionPrefix6 = 'homepage_jumbotron_section_6_';
 
     return array(
       get_theme_option($themeOptionPrefix1.$optionName),
       get_theme_option($themeOptionPrefix2.$optionName),
       get_theme_option($themeOptionPrefix3.$optionName),
-      get_theme_option($themeOptionPrefix4.$optionName)
+      get_theme_option($themeOptionPrefix4.$optionName),
+      get_theme_option($themeOptionPrefix5.$optionName),
+      get_theme_option($themeOptionPrefix6.$optionName)
     );
   }
 

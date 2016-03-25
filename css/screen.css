@@ -1130,6 +1130,6 @@ span.current-page {
 }
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100italic,800italic,700italic);
 #siteTitleHeader {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif !important;
 }
 /*# sourceMappingURL=screen.css.map */

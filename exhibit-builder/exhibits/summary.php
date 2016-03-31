@@ -7,13 +7,14 @@
   $tags = tag_string('exhibit', 'exhibits', '');
   $pageTree = exhibit_builder_page_tree();
   //add dropdown formatting to $pageTree
-  
+
 ?>
 
 <div class="container exhibit">
   <div class="section-header col-md-10 col-md-offset-1">
-    <small>-EXHIBITS SUMMARY-</small>
-    <h1><?php echo $title ?></h1>
+    <div id="exhibit-nav-up">
+      <?php echo exhibit_builder_page_trail(); ?>
+    </div>
   </div><!-- end of section-header -->
 
   <article>

@@ -17,7 +17,7 @@
     <?php echo search_filters(); ?>
   </div><!-- end of sort-links -->
 </div><!-- end of container -->
-  
+
   <?php if ($total_results): ?>
     <div class="container">
       <?php echo pagination_links(); ?>
@@ -32,9 +32,9 @@
           $recordLink = record_url($record, 'show');
           $recordTitle = $searchText['title'] ? $searchText['title'] : '[Unknown]';
           $recordImage = record_image($recordType, 'square_thumbnail');
-          
+
         ?>
-      
+
       <div class="exhibit-item" onclick="window.location='<?php echo $recordLink ?>'">
         <?php echo $recordImage; ?>
         <h1><?php echo $recordTitle; ?></h1>
@@ -64,7 +64,7 @@
     // layout Isotope after each image loads
     $grid.imagesLoaded().progress( function() {
       $grid.masonry();
-    }); 
+    });
   });
 </script>
 

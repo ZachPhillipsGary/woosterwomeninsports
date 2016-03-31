@@ -5,12 +5,16 @@
     $themeOptionPrefix2 = 'homepage_jumbotron_section_2_';
     $themeOptionPrefix3 = 'homepage_jumbotron_section_3_';
     $themeOptionPrefix4 = 'homepage_jumbotron_section_4_';
+    $themeOptionPrefix5 = 'homepage_jumbotron_section_5_';
+    $themeOptionPrefix6 = 'homepage_jumbotron_section_6_';
 
     return array(
       get_theme_option($themeOptionPrefix1.$optionName),
       get_theme_option($themeOptionPrefix2.$optionName),
       get_theme_option($themeOptionPrefix3.$optionName),
-      get_theme_option($themeOptionPrefix4.$optionName)
+      get_theme_option($themeOptionPrefix4.$optionName),
+      get_theme_option($themeOptionPrefix5.$optionName),
+      get_theme_option($themeOptionPrefix6.$optionName)
     );
   }
 
@@ -123,43 +127,43 @@
    </div>
    <div class="col-md-4 col-sm-6">
      <div class="section">
-       <?php if (!empty($sectionBackgroundImages[0])): ?>
+       <?php if (!empty($sectionBackgroundImages[4])): ?>
          <!-- do a hacky fix for now -->
-         <img src="<?php echo "./".$themeUploadsPath.$sectionBackgroundImages[0] ?>" class="background">
+         <img src="<?php echo "./".$themeUploadsPath.$sectionBackgroundImages[4] ?>" class="background">
        <?php else: ?>
          <div class="background"></div>
        <?php endif ?>
        <div class="front">
          <div class="container">
-           <span class="glyphicon <?php echo $sectionTitleIcons[0] ?>" aria-hidden="true"></span>
-           <p class="sans-serif-800"><?php echo $sectionTitle1s[0] ?></p>
-           <p class="serif-400"><?php echo $sectionTitle2s[0] ?></p>
+           <span class="glyphicon <?php echo $sectionTitleIcons[4] ?>" aria-hidden="true"></span>
+           <p class="sans-serif-800"><?php echo $sectionTitle1s[4] ?></p>
+           <p class="serif-400"><?php echo $sectionTitle2s[4] ?></p>
          </div>
        </div>
        <div class="back">
-         <p><?php echo $sectionInfos[0] ?></p>
-         <a href="<?php echo $sectionLinks[0] ?>">LEARN MORE</a>
+         <p><?php echo $sectionInfos[4] ?></p>
+         <a href="<?php echo $sectionLinks[4] ?>">LEARN MORE</a>
        </div>
      </div>
    </div>
    <div class="col-md-4 col-sm-6">
      <div class="section">
-       <?php if (!empty($sectionBackgroundImages[0])): ?>
+       <?php if (!empty($sectionBackgroundImages[5])): ?>
          <!-- do a hacky fix for now -->
-         <img src="<?php echo "./".$themeUploadsPath.$sectionBackgroundImages[0] ?>" class="background">
+         <img src="<?php echo "./".$themeUploadsPath.$sectionBackgroundImages[4] ?>" class="background">
        <?php else: ?>
          <div class="background"></div>
        <?php endif ?>
        <div class="front">
          <div class="container">
-           <span class="glyphicon <?php echo $sectionTitleIcons[0] ?>" aria-hidden="true"></span>
-           <p class="sans-serif-800"><?php echo $sectionTitle1s[0] ?></p>
-           <p class="serif-400"><?php echo $sectionTitle2s[0] ?></p>
+           <span class="glyphicon <?php echo $sectionTitleIcons[5] ?>" aria-hidden="true"></span>
+           <p class="sans-serif-800"><?php echo $sectionTitle1s[5] ?></p>
+           <p class="serif-400"><?php echo $sectionTitle2s[5] ?></p>
          </div>
        </div>
        <div class="back">
-         <p><?php echo $sectionInfos[0] ?></p>
-         <a href="<?php echo $sectionLinks[0] ?>">LEARN MORE</a>
+         <p><?php echo $sectionInfos[5] ?></p>
+         <a href="<?php echo $sectionLinks[5] ?>">LEARN MORE</a>
        </div>
      </div>
    </div>
@@ -179,4 +183,4 @@
  -->
 </div>
 
-<?php echo foot(array('displayFooter' => false)); ?>
+<?php echo foot(array('displayFooter' => true)); ?>

@@ -14,26 +14,26 @@
       <small>-SEARCH ITEMS-</small>
       <!-- search-keywords -->
       <div id="search-keywords" class="field col-md-12">
-        <?php echo $this->formLabel('keyword-search', __('')); ?>  
+        <?php echo $this->formLabel('keyword-search', __('')); ?>
         <div class="inputs">
-          
+
           <?php
             echo $this->formText('search',
                                  @$_REQUEST['search'],
-                                 array('id' => 'keyword-search', 
+                                 array('id' => 'keyword-search',
                                        'size' => '40',
                                        'placeholder' => 'Search for Keywords'
                                       )
                                 );
-          
+
           ?>
           <button type="submit" class="submit glyphicon glyphicon-search" name="submit_search" id="submit_search_advanced">
-          
+
         </div><!-- end of inputs -->
 
       </div><!-- end of search-keywords -->
     </div><!-- end of section-header -->
-
+<div id="advancedSearch">
     <div class="col-md-4">
       <div id="search-narrow-by-fields" class="field">
         <div class="label">Narrow by Specific Fields'</div>
@@ -63,8 +63,8 @@
                                          'title' => __("Search Field"),
                                          'id' => null,
                                          'class' => 'advanced-search-element'),
-                                       get_table_options('Element', 
-                                                         null, 
+                                       get_table_options('Element',
+                                                         null,
                                                          array('record_types' => array('Item', 'All'),
                                                                'sort' => 'orderBySet')
                                                         )
@@ -91,7 +91,7 @@
                                     );
                       ?>
                 <button type="button" class="remove_search" disabled="disabled" style="display: none;">
-                  <?php echo __(''); ?>  
+                  <?php echo __(''); ?>
                 </button>
               </div>
           <?php endforeach; ?>
@@ -206,13 +206,13 @@
         ?>
         </div>
       </div>
-      
+
       <?php fire_plugin_hook('public_items_search', array('view' => $this)); ?>
     </div>
-    
+
     <div>
-      
+
     </div>
-    
+
   </form>
 </div>

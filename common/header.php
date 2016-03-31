@@ -73,17 +73,35 @@
       </div><!-- end of container-->
     </div><!-- end of nav-container-->
   </div><!-- end of nav-drawer-->
-  <div class="navbar navbar-default">
+  <div class="container-fluid" style="background-color:#FFCC00;color:#000;height:100px;">
+  <h1 id="siteTitleHeader"><a href="//104.236.254.210/omeka/"><?php echo option('site_title'); ?></a></h1>
+  </div>
+  <div data-spy="affix" data-offset-top="197" class="hidden-xs hidden-sm navbar navbar-inverse ">
   <div class="container-fluid">
-    <div class="hidden-xs hidden-xs navbar-header">
-      <a class="navbar-brand" href="../">Women in Sport and Physical Education</a>
+    <div class="row">
+      <div class=" col-md-8 ">
+    <div class=" navbar-header collapse navbar-collapse">
     </div>
       <?php
         $menu = public_nav_main();
         $menu -> setUlClass('nav navbar-nav');
         echo $menu;
       ?>
-
+    </div>
+     <div role="search" class="col-md-4">
+       <span class="pull-right">
+      <?php
+        if (get_theme_option('use_advanced_search') === null ||
+            get_theme_option('use_advanced_search')):
+          echo search_form(array('show_advanced' => true,
+                                 'submit_value' => 'Search'));
+        else:
+          echo search_form();
+        endif;
+      ?>
+      </span>
+    </div>
+    </div>
   </div>
 </div>
 

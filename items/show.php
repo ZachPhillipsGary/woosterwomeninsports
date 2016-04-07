@@ -94,7 +94,8 @@
       <?php
         showItemDescriptionTag('RIGHTS', $rights);
         showItemDescriptionTag("COVERAGE",$coverage);
-        
+        showItemDescriptionTag("RELATION",$relation);
+
       ?>
     </div>
 

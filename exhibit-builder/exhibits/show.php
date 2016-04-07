@@ -16,14 +16,14 @@
 </div><!-- end of container -->
 
 <div class="container exhibit">
-  <article>
+  <article class="col-md-8">
     <div class="col-md-12">
       <div class="article-content">
         <?php exhibit_builder_render_exhibit_page(); ?>
       </div>
     </div>
   </article>
-  <nav id="exhibit-pages" >
+  <nav id="exhibit-pages" class="col-md-4" >
     <p><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></p>
     <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
   </nav>

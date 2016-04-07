@@ -1159,4 +1159,7 @@ li.page-input {
 #tagsModal {
   display: none;
 }
+span.glyphicon.glyphicon-menu-hamburger {
+  padding-top: 15px;
+}
 /*# sourceMappingURL=screen.css.map */

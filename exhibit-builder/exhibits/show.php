@@ -23,13 +23,14 @@
       </div>
     </div>
   </article>
-</div>
-
-<div class="container">
-  <nav id="exhibit-pages" class="col-md-8 col-md-offset-2">
+  <nav id="exhibit-pages" >
     <p><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></p>
     <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
   </nav>
+</div>
+
+<div class="container">
+
 
   <nav>
     <ul id="exhibit-page-navigation" class="pager">

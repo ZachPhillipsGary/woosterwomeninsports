@@ -5,7 +5,7 @@ if (!Omeka) {
 (function($) {
   $(document).ready(function () {
     $(".expand-advanced-search").click(function(){
-    $("advancedSearch").toggle();
+    $("#advancedSearch").toggle();
       });
     //dynamically inject search form placeholder text
     $("#query").attr( "placeholder", "type search terms here" );

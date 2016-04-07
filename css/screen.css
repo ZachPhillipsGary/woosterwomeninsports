@@ -1151,6 +1151,6 @@ font-family: Cardo, 'Times New Roman', Times, serif;
   padding-right: 0px;
 }
 li.page-input {
-  display: none;
+  display: none !important;
 }
 /*# sourceMappingURL=screen.css.map */

@@ -1153,4 +1153,7 @@ font-family: Cardo, 'Times New Roman', Times, serif;
 li.page-input {
   display: none !important;
 }
+#advancedSearch {
+  display: none;
+}
 /*# sourceMappingURL=screen.css.map */

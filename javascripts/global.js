@@ -9,6 +9,9 @@ if (!Omeka) {
     $(".expand-advanced-search").click(function(){
     $("#advancedSearch").toggle();
       });
+      $(".tag-advanced-search").click(function(){
+      $("#tagsModal").toggle();
+        });
     //dynamically inject search form placeholder text
     $("input#query").attr( "placeholder", "type search terms here" );
     // Show advanced options for site-wide search.

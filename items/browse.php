@@ -11,9 +11,7 @@
 
 <div>
   <div class="container">
-    <button class="expand-advanced-search closed">
-      <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
-      <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+    <button class="expand-advanced-search">
       ADVANCED SEARCH
     </button>
     <div class="section-header col-md-10 col-md-offset-1">
@@ -47,7 +45,7 @@
   </div><!-- end of grid-->
 
   <div class="container">
-    <?php echo pagination_links(); ?>
+      <?php echo pagination_links(); ?>
   </div>
 
   <footer role="contentinfo" class="jumbotron">

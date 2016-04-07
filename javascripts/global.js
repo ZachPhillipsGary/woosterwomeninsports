@@ -4,7 +4,7 @@ if (!Omeka) {
 
 (function($) {
   $(document).ready(function () {
-    $("#tagCloud div.tags").att('label"');
+  //  $("#tagCloud div.tags").att('label"');
 
     $(".expand-advanced-search").click(function(){
     $("#advancedSearch").toggle();

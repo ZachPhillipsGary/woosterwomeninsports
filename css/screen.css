@@ -424,6 +424,7 @@ article p#simple-pages-breadcrumbs {
   right: 0;
   margin: auto;
   z-index: 9999;
+  height:100px;
   /* Firefox */
   -moz-transition: top 0.3s ease-in-out;
   /* WebKit */
@@ -432,12 +433,12 @@ article p#simple-pages-breadcrumbs {
   -o-transition: top 0.3s ease-in-out;
   /* Standard */
   transition: top 0.3s ease-in-out;
-  width: 70px;
+  width: 170px;
   background-color: #000000;
   display: block;
   padding-top: 20px;
   padding-bottom: 15px;
-  padding-left: 8px;
+  padding-left: 8px;:
   cursor: pointer;
   font-size: 2em;
   color: white;

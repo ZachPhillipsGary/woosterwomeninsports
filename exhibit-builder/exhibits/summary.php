@@ -30,7 +30,7 @@
   </article>
 
 
-  <nav id="exhibit-pages" class="col-md-8 col-md-offset-2">
+  <nav id="exhibit-pages" >
     <p>Exhibit Navigation</p>
     <?php echo $pageTree; ?>
   </nav>

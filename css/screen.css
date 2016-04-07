@@ -1165,4 +1165,8 @@ span.glyphicon.glyphicon-menu-hamburger {
 #exhibit-pages {
   font-size: 1.0em;
 }
+#exhibit-pages ul {
+  font-size: 15px;
+}
+
 /*# sourceMappingURL=screen.css.map */

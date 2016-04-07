@@ -45,9 +45,7 @@
         </li>
       <?php endif; ?>
     </ul>
-    <div id="exhibit-nav-up">
-      <?php echo exhibit_builder_page_trail(); ?>
-    </div>
+
   </nav>
 </div><!-- end of container -->
 

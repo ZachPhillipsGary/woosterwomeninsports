@@ -10,7 +10,7 @@ if (!Omeka) {
     $("#advancedSearch").toggle();
       });
     //dynamically inject search form placeholder text
-    $("#query").attr( "placeholder", "type search terms here" );
+    $("input#query").attr( "placeholder", "type search terms here" );
     // Show advanced options for site-wide search.
     Omeka.showAdvancedForm = function () {
       var advanced_form = $('#advanced-form');

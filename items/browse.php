@@ -21,18 +21,7 @@
       <h1>Items <?php echo __('(%s total)', $total_results); ?></h1>
     </div>
 
-    <div class="sort-links col-md-8 col-md-offset-2">
-      <span class="sort-label">-SORT BY-</span>
-      <?php
-        echo pagination_links();
-        if ($total_results > 0) {
-          $sortLinks[__('Title')] = 'Dublin Core,Title';
-          $sortLinks[__('Creator')] = 'Dublin Core,Creator';
-          $sortLinks[__('Date Added')] = 'added';
-          echo browse_sort_links($sortLinks);
-        }
-      ?>
-    </div><!-- end of sort-links -->
+<!-- end of sort-links -->
 
 
 

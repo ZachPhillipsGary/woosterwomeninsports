@@ -4,6 +4,8 @@ if (!Omeka) {
 
 (function($) {
   $(document).ready(function () {
+    $("#tagCloud > div.tags").addClass('label label-default"');
+
     $(".expand-advanced-search").click(function(){
     $("#advancedSearch").toggle();
       });

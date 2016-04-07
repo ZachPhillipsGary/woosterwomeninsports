@@ -444,7 +444,7 @@ article p#simple-pages-breadcrumbs {
   line-height: 0.5em;
   letter-spacing: 0.3em;
   text-align: center;
-  border-bottom: 8px solid #CFB53B; }
+/*  border-bottom: 8px solid #CFB53B;*/ }
 
 .nav-container {
   border-bottom: 8px solid #000000;

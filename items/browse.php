@@ -24,7 +24,12 @@
 
 <!-- end of sort-links -->
 
-
+<div id="tagCloud">
+    <?php foreach (loop('items') as $item): ?>
+    <?php $itemTags = tag_string('item', 'items/browse', ''); ?>
+    <div class="tags"><?php echo $itemTags; ?></div>
+      <?php endforeach; ?>
+</div>
 
   </div><!-- end of container -->
 

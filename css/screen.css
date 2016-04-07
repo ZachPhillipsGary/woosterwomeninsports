@@ -432,7 +432,7 @@ article p#simple-pages-breadcrumbs {
   -o-transition: top 0.3s ease-in-out;
   /* Standard */
   transition: top 0.3s ease-in-out;
-  width: 60px;
+  width: 70px;
   background-color: #000000;
   display: block;
   padding-top: 20px;

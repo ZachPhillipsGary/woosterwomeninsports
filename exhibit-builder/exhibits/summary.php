@@ -1,3 +1,4 @@
+
 <?php echo head(array('title' => metadata('exhibit', 'title'), 'bodyclass'=>'exhibits summary')); ?>
 
 <?php
@@ -6,15 +7,12 @@
   $credits = metadata('exhibit', 'credits');
   $tags = tag_string('exhibit', 'exhibits', '');
   $pageTree = exhibit_builder_page_tree();
-  //add dropdown formatting to $pageTree
-
 ?>
 
 <div class="container exhibit">
   <div class="section-header col-md-10 col-md-offset-1">
-    <div id="exhibit-nav-up">
-      <?php echo exhibit_builder_page_trail(); ?>
-    </div>
+    <small>-EXHIBITS SUMMARY-</small>
+    <h1><?php echo $title ?></h1>
   </div><!-- end of section-header -->
 
   <article>
@@ -31,13 +29,11 @@
     </div>
   </article>
 
-  <div class="dropdown">
-  <button id="exhibit-pages" class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Exhibit Navigation
-  <span class="caret"></span></button>
+
+  <nav id="exhibit-pages" class="col-md-8 col-md-offset-2">
+    <p>Exhibit Navigation</p>
     <?php echo $pageTree; ?>
-
-</div>
-
+  </nav>
 
 </div>
 

@@ -30,7 +30,7 @@
     <p><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></p>
     <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
   </nav>
-  
+
   <nav>
     <ul id="exhibit-page-navigation" class="pager">
       <?php if ($prevLink = exhibit_builder_link_to_previous_page()): ?>
@@ -49,8 +49,8 @@
     </div>
   </nav>
 </div><!-- end of container -->
-  
-  
 
-  
+
+
+
 <?php echo foot(); ?>

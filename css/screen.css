@@ -1145,4 +1145,8 @@ font-family: Cardo, 'Times New Roman', Times, serif;
    -moz-border-radius: 0 !important;
         border-radius: 0 !important;
 }
+.col-md-4.col-sm-6.front-highlights {
+   padding-left: 0px;
+  padding-right: 0px;
+}
 /*# sourceMappingURL=screen.css.map */

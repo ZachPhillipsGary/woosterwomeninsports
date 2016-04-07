@@ -28,7 +28,7 @@
       </div>
     </div>
     <nav id="exhibit-pages" >
-      <p>Exhibit Navigation</p>
+      <p>Navigation</p>
       <?php echo $pageTree; ?>
     </nav>
   </article>

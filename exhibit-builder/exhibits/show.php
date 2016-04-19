@@ -25,7 +25,7 @@
     <nav id="exhibit-pages" class="col-md-2" >
     <?php echo exhibit_builder_link_to_exhibit($exhibit); ?>
     <div class="dropdown">
- <a data-target="#" href="page.html" data-toggle="dropdown" class="dropdown-toggle">Test<b class="caret"></b></a>
+ <a data-target="#" data-toggle="dropdown" class="dropdown-toggle">Test<b class="caret"></b></a>
       <?php $menu = exhibit_builder_page_tree($exhibit, $exhibit_page); 
  $dropdownMenu = preg_replace('/(<ul\b[^><]*)>/i', '$1 class="dropdown-menu">', $menu);
  echo $dropdownMenu;

@@ -23,8 +23,12 @@
       </div>
     </div>
     <nav id="exhibit-pages" class="col-md-2" >
-      <p><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></p>
-      <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
+    <div class="dropdown">
+ <a data-target="#" href="page.html" data-toggle="dropdown" class="dropdown-toggle"> <?php echo exhibit_builder_link_to_exhibit($exhibit); ?><b class="caret"></b></a>
+      <?php $menu = exhibit_builder_page_tree($exhibit, $exhibit_page); 
+ $dropdownMenu = preg_replace('/(<ul\b[^><]*)>/i', '$1 class="dropdown-menu;">', $menu);
+ echo $dropdownMenu;
+      ?>
     </nav>
   </article>
 

@@ -7,7 +7,6 @@
 <?php
   $title = metadata('exhibit_page', 'title');
 ?>
-
 <div class="container exhibit">
   <div class="section-header col-md-8 col-md-offset-2">
     <small>-EXHIBIT-</small>

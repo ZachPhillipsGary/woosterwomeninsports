@@ -4,7 +4,6 @@
 ?>
 
 <div class="container">
-<?php echo tag_cloud($tags, 'exhibits/browse'); ?>
   <div class="section-header col-md-10 col-md-offset-1">
     <small>-BROWSE-</small>
     <h1>Exhibits <?php echo __('(%s total)', $total_results); ?></h1>

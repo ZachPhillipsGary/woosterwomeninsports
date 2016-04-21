@@ -8,11 +8,6 @@
   $title = metadata('exhibit_page', 'title');
 ?>
 <div class="container exhibit">
-  <div class="section-header col-md-8 col-md-offset-2">
-    <small>-EXHIBIT-</small>
-    <h1><?php echo $title ?></h1>
-  </div><!-- end of section-header -->
-</div><!-- end of container -->
  <div class="dropdown">
 
     <button class="btn btn-default dropdown-toggle" type="button" id="exhibitMenu" data-toggle="dropdown">Menu<span class="caret"></span></button>
@@ -22,6 +17,12 @@
       ?>
 
 </div>
+  <div class="section-header col-md-8 col-md-offset-2">
+    <small>-EXHIBIT-</small>
+    <h1><?php echo $title ?></h1>
+  </div><!-- end of section-header -->
+</div><!-- end of container -->
+
 
 
 <div class="container exhibit">

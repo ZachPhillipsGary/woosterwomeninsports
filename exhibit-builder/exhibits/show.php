@@ -14,12 +14,27 @@
   </div><!-- end of section-header -->
 </div><!-- end of container -->
  <div class="dropdown">
- <a data-target="#" data-toggle="dropdown" class="dropdown-toggle">Test<b class="caret"></b></a>
+
+    <button class="btn btn-default dropdown-toggle" type="button" id="exhibitMenu" data-toggle="dropdown">Menu<span class="caret"></span></button>
       <?php $menu = exhibit_builder_page_tree($exhibit, $exhibit_page); 
- $dropdownMenu = preg_replace('/(<ul\b[^><]*)>/i', '$1 class="dropdown-menu">', $menu);
+ $dropdownMenu = preg_replace('/(<ul\b[^><]*)>/i', '$1 role="menu" aria-labelledby="exhibitMenu" class="dropdown-menu">', $menu);
  echo $dropdownMenu;
       ?>
+      
 </div>
+
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+    </ul>
+  </div>
+
 <div class="container exhibit">
   <article>
     <div class="col-md-10">

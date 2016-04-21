@@ -102,7 +102,9 @@
 
     <div class="col-lg-2 col-md-3 col-sm-6">
       <?php
-        showCollectionDescriptionTag('RIGHTS', $rights); 
+        showItemDescriptionTag('RIGHTS', $rights);
+        showItemDescriptionTag("COVERAGE",$coverage);
+        showItemDescriptionTag("RELATION",$relation);
       ?>
     </div>
     

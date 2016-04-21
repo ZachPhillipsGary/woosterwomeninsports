@@ -104,9 +104,9 @@
   jQuery(document).ready(function () {
 
     $('.popularity').addClass( 'list-unstyled' );
-     $( ".popularity" ).children().addClass( "label" );
-     $( ".popularity" ).children().addClass( "label-default" );
-     
+     $( ".popularity" ).children().addClass( "exhibit-item" );
+     $( ".popularity" ).children().addClass( "tags" );
+      
     $("button").click(function(){
     $("p").toggle();
     });

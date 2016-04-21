@@ -36,6 +36,7 @@
         </div>
         <div class="modal-body">
           <div id="tagCloud">
+          <?php echo get_recent_tags(99999); ?>
             <?php $tags = tag_string();
             echo $tags;
           //  echo tag_cloud($tags); ?>

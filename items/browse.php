@@ -93,7 +93,7 @@
      $( ".popularity" ).children().addClass( "tags" );
 
     $( "#openTagCloud" ).on( "click", function() {
-      $( "#tagCloud" )..dialog( "open" );
+      $( "#tagCloud" ).dialog( "open" );
     });
 
     $("button").click(function(){

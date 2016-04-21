@@ -39,7 +39,7 @@
             <?php echo tag_cloud(); ?>
               <?php foreach (loop('items') as $item): ?>
               <?php $itemTags = tag_string('item', 'items/browse', ''); ?>
-              <div class="cloudtags"><?php echo $itemTags; ?></div>
+              <div class="cloudtags"><?php //echo $itemTags; ?></div>
               <span class="label label-default"></span>
 
                 <?php endforeach; ?>

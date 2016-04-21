@@ -37,7 +37,7 @@
         <div class="modal-body">
           <div id="tagCloud">
           <?php $tags = get_recent_tags(99999);
-           echo tag_cloud($tags, 'exhibits/browse'); ?>
+           echo tag_cloud($tags, 'items/browse'); ?>
               <?php foreach (loop('items') as $item): ?>
               <?php $itemTags = tag_string('item', 'items/browse', ''); ?>
               <div class="cloudtags"><?php //echo $itemTags; ?></div>

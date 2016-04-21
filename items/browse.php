@@ -25,7 +25,8 @@
 <!-- end of sort-links -->
 
   <div class="tagCloud" title="tags">
-
+  <small>-BROWSE-</small>
+      <h1>Tags</h1>
           <?php $tags = get_recent_tags(99999);
            echo tag_cloud($tags, 'items/browse'); ?>
               <?php foreach (loop('items') as $item): ?>

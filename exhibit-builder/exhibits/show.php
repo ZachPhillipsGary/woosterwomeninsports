@@ -27,7 +27,7 @@
 
 <div class="container exhibit">
   <article>
-    <div class="col-md-10">
+    <div class="col-md-12">
       <div class="article-content">
         <?php exhibit_builder_render_exhibit_page(); ?>
       </div>

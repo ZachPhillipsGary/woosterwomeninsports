@@ -11,10 +11,10 @@
 
 <div>
   <div class="container">
-    <button class="expand-advanced-search">
+    <button class="btn btn-default expand-advanced-search">
       ADVANCED SEARCH
     </button>
-    <a  class="btn btn-default" href="#popup1">
+    <button id="openTagCloud" class="btn btn-default" >
       TAGS
     </a>
     <div class="section-header col-md-10 col-md-offset-1">
@@ -24,8 +24,7 @@
 
 <!-- end of sort-links -->
 
-<div id="popup1" class="overlay">
-  <div class="popup">
+  <div class="tagCloud" title="tags">
 
           <?php $tags = get_recent_tags(99999);
            echo tag_cloud($tags, 'items/browse'); ?>
@@ -39,7 +38,6 @@
 
 </div>
 
-</div>
 
 
 
@@ -93,6 +91,10 @@
     $('.popularity').addClass( 'list-unstyled' );
      $( ".popularity" ).children().addClass( "exhibit-item" );
      $( ".popularity" ).children().addClass( "tags" );
+
+    $( "#create-user" ).button().on( "click", function() {
+      dialog.dialog( "open" );
+    });
 
     $("button").click(function(){
     $("p").toggle();

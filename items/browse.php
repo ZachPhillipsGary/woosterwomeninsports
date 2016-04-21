@@ -36,8 +36,7 @@
         </div>
         <div class="modal-body">
           <div id="tagCloud">
-          <?php echo tag_string('exhibit', 'exhibits'); ?>
-            <?php $tags = get_records('tags'); 
+            <?php $tags = get_records('omeka_tags'); 
             echo tag_cloud($tags); ?>
               <?php foreach (loop('items') as $item): ?>
               <?php $itemTags = tag_string('item', 'items/browse', ''); ?>

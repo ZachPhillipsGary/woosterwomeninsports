@@ -14,9 +14,9 @@
     <button class="expand-advanced-search">
       ADVANCED SEARCH
     </button>
-    <button data-toggle="modal" data-target="#tagsModal" class="tag-advanced-search">
+    <a  class="btn btn-default" href="#popup1">
       TAGS
-    </button>
+    </a>
     <div class="section-header col-md-10 col-md-offset-1">
       <small>-BROWSE-</small>
       <h1>Items <?php echo __('(%s total)', $total_results); ?></h1>
@@ -24,18 +24,9 @@
 
 <!-- end of sort-links -->
 
+<div id="popup1" class="overlay">
+  <div class="popup">
 
-  <!-- Modal -->
-  <div class="modal fade" id="tagsModal" role="dialog">
-
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Tags</h4>
-        </div>
-        <div class="modal-body">
-          <div id="tagCloud">
           <?php $tags = get_recent_tags(99999);
            echo tag_cloud($tags, 'items/browse'); ?>
               <?php foreach (loop('items') as $item): ?>
@@ -44,14 +35,10 @@
               <span class="label label-default"></span>
 
                 <?php endforeach; ?>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
+                  </div>
+
+</div>
+
 </div>
 
 
@@ -106,7 +93,7 @@
     $('.popularity').addClass( 'list-unstyled' );
      $( ".popularity" ).children().addClass( "exhibit-item" );
      $( ".popularity" ).children().addClass( "tags" );
-      
+
     $("button").click(function(){
     $("p").toggle();
     });

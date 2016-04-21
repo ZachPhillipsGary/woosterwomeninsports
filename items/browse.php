@@ -91,8 +91,7 @@
     $('.popularity').addClass( 'list-unstyled' );
      $( ".popularity" ).children().addClass( "exhibit-item" );
      $( ".popularity" ).children().addClass( "tags" );
-
-      $( "#tagCloud" ).dialog();
+         $( ".tagCloud" ).dialog();
 
 
     $("button").click(function(){

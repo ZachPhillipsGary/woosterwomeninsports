@@ -16,7 +16,7 @@
     </button>
     <button id="openTagCloud" class="btn btn-default" >
       TAGS
-    </a>
+    </button>
     <div class="section-header col-md-10 col-md-offset-1">
       <small>-BROWSE-</small>
       <h1>Items <?php echo __('(%s total)', $total_results); ?></h1>
@@ -92,7 +92,7 @@
      $( ".popularity" ).children().addClass( "exhibit-item" );
      $( ".popularity" ).children().addClass( "tags" );
 
-    $( "#create-user" ).button().on( "click", function() {
+    $( "#openTagCloud" ).button().on( "click", function() {
       dialog.dialog( "open" );
     });
 

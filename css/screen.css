@@ -1168,5 +1168,28 @@ span.glyphicon.glyphicon-menu-hamburger {
 #exhibit-pages ul {
   font-size: 15px;
 }
-
+li.popular {
+  -webkit-font-smoothing: antialiased;
+background-color: rgb(34, 34, 34);
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+box-sizing: border-box;
+color: rgb(255, 255, 255);
+display: inline;
+font-family: 'Source Sans Pro', Calibri, Candara, Arial, sans-serif;
+font-size: 11px;
+font-weight: bold;
+height: auto;
+line-height: 11px;
+padding-bottom: 3.375px;
+padding-left: 6.75px;
+padding-right: 6.75px;
+padding-top: 2.25px;
+text-align: center;
+vertical-align: baseline;
+white-space: nowrap;
+width: auto;
+}
 /*# sourceMappingURL=screen.css.map */

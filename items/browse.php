@@ -17,7 +17,7 @@
     <button id="openTagCloud" class="btn btn-default" >
       TAGS
     </button>
-    <div class="section-header col-md-10 col-md-offset-1">
+    <div id="itemTitle" class="section-header col-md-10 col-md-offset-1">
       <small>-BROWSE-</small>
       <h1>Items <?php echo __('(%s total)', $total_results); ?></h1>
     </div>
@@ -25,8 +25,11 @@
 <!-- end of sort-links -->
 
   <div class="tagCloud" title="tags">
+  <div class="container">
+  <div class="section-header col-md-10 col-md-offset-1">
   <small>-BROWSE-</small>
       <h1>Tags</h1>
+      </div>
           <?php $tags = get_recent_tags(99999);
            echo tag_cloud($tags, 'items/browse'); ?>
               <?php foreach (loop('items') as $item): ?>
@@ -35,6 +38,7 @@
               <span class="label label-default"></span>
 
                 <?php endforeach; ?>
+                  </div>
                   </div>
 
 </div>
@@ -97,7 +101,7 @@
 
     $("#openTagCloud").click(function(){
           $( ".tagCloud" ).toggle();
-          $("div.section-header.col-md-10.col-md-offset-1").toggle();
+          $("#itemTitle").toggle();
 
     });
     Omeka.Search.activateSearchButtons();

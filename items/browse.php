@@ -36,7 +36,8 @@
         </div>
         <div class="modal-body">
           <div id="tagCloud">
-            <?php echo tag_cloud(); ?>
+            <?php $tags = get_records('tags'); 
+            echo tag_cloud($tags); ?>
               <?php foreach (loop('items') as $item): ?>
               <?php $itemTags = tag_string('item', 'items/browse', ''); ?>
               <div class="cloudtags"><?php //echo $itemTags; ?></div>

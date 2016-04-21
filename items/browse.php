@@ -96,6 +96,7 @@
 
     $("#openTagCloud").click(function(){
           $( ".tagCloud" ).toggle();
+          $("div.section-header.col-md-10.col-md-offset-1").toggle();
 
     });
     Omeka.Search.activateSearchButtons();

@@ -51,9 +51,7 @@
 
 <script type="text/javascript">
   jQuery(document).ready(function () {
-     $('.popularity').addClass( 'list-unstyled' );
-     $( ".popularity" ).children().addClass( "label" );
-     $( ".popularity" ).children().addClass( "label-default" );
+  
 
     // init Masonry
     var $grid = $('.search-results').masonry({

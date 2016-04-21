@@ -30,7 +30,6 @@
         <p><?php echo $exhibitDescription; ?></p>
         <div class="tags"><?php echo $exhibitTags; ?></div>
       </div>
-
     <?php endforeach; ?>
   </div>
 
@@ -52,6 +51,10 @@
 
 <script type="text/javascript">
   jQuery(document).ready(function () {
+     $('.popularity').addClass( 'list-unstyled' );
+     $( ".popularity" ).children().addClass( "label" );
+     $( ".popularity" ).children().addClass( "label-default" );
+
     // init Masonry
     var $grid = $('.search-results').masonry({
       itemSelector: '.exhibit-item',

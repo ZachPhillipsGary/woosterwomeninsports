@@ -1168,7 +1168,8 @@ span.glyphicon.glyphicon-menu-hamburger {
 #exhibit-pages ul {
   font-size: 15px;
 }
-li.popular {
+.hTagcloud > li {
+  list-style-type:none;
   -webkit-font-smoothing: antialiased;
 background-color: rgb(34, 34, 34);
 border-bottom-left-radius: 0px;

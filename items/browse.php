@@ -91,11 +91,12 @@
     $('.popularity').addClass( 'list-unstyled' );
      $( ".popularity" ).children().addClass( "exhibit-item" );
      $( ".popularity" ).children().addClass( "tags" );
-         $( ".tagCloud" ).dialog();
+      $( ".tagCloud" ).toggle();
 
 
-    $("button").click(function(){
-    $("p").toggle();
+    $("#openTagCloud").click(function(){
+          $( ".tagCloud" ).toggle();
+
     });
     Omeka.Search.activateSearchButtons();
 

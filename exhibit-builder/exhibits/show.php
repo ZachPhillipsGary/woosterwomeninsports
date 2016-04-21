@@ -13,7 +13,13 @@
     <h1><?php echo $title ?></h1>
   </div><!-- end of section-header -->
 </div><!-- end of container -->
-
+ <div class="dropdown">
+ <a data-target="#" data-toggle="dropdown" class="dropdown-toggle">Test<b class="caret"></b></a>
+      <?php $menu = exhibit_builder_page_tree($exhibit, $exhibit_page); 
+ $dropdownMenu = preg_replace('/(<ul\b[^><]*)>/i', '$1 class="dropdown-menu">', $menu);
+ echo $dropdownMenu;
+      ?>
+</div>
 <div class="container exhibit">
   <article>
     <div class="col-md-10">
@@ -21,13 +27,7 @@
         <?php exhibit_builder_render_exhibit_page(); ?>
       </div>
     </div>
-        <div class="dropdown">
- <a data-target="#" data-toggle="dropdown" class="dropdown-toggle">Test<b class="caret"></b></a>
-      <?php $menu = exhibit_builder_page_tree($exhibit, $exhibit_page); 
- $dropdownMenu = preg_replace('/(<ul\b[^><]*)>/i', '$1 class="dropdown-menu">', $menu);
- echo $dropdownMenu;
-      ?>
-</div>
+       
 
   </article>
 

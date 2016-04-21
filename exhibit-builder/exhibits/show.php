@@ -21,9 +21,7 @@
         <?php exhibit_builder_render_exhibit_page(); ?>
       </div>
     </div>
-    <nav id="exhibit-pages" class="col-md-2" >
-    <?php echo exhibit_builder_link_to_exhibit($exhibit); ?>
-    <div class="dropdown">
+        <div class="dropdown">
  <a data-target="#" data-toggle="dropdown" class="dropdown-toggle">Test<b class="caret"></b></a>
       <?php $menu = exhibit_builder_page_tree($exhibit, $exhibit_page); 
  $dropdownMenu = preg_replace('/(<ul\b[^><]*)>/i', '$1 class="dropdown-menu">', $menu);
@@ -36,6 +34,9 @@
         <li><a href="#">Another action</a></li>
     </ul>
 </div>
+    <nav id="exhibit-pages" class="col-md-2" >
+    <?php echo exhibit_builder_link_to_exhibit($exhibit); ?>
+
     </nav>
   </article>
 

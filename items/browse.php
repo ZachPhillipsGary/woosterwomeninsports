@@ -92,9 +92,8 @@
      $( ".popularity" ).children().addClass( "exhibit-item" );
      $( ".popularity" ).children().addClass( "tags" );
 
-    $( "#openTagCloud" ).on( "click", function() {
-      $( "#tagCloud" ).dialog( "open" );
-    });
+      $( "#tagCloud" ).dialog();
+
 
     $("button").click(function(){
     $("p").toggle();

@@ -75,7 +75,7 @@
   </div><!-- end of nav-drawer #FFCC00-->
   <div class="container-fluid" style="background-color:<?php echo get_theme_option('banner_color'); ?>;height:100px;">
   <!-- <?php echo option('site_title'); ?> -->
-  <img style="width:100%" src="<?php  $themeUploadsPath = './files/theme_uploads/'; $image = get_theme_option("homepage_logo_large"); 
+  <img style="width:100% height:100px" src="<?php  $themeUploadsPath = './files/theme_uploads/'; $image = get_theme_option("homepage_logo_large"); 
   echo $themeUploadsPath.$image; ?>">
   </div>
   <div data-spy="affix" data-offset-top="197" class="hidden-xs hidden-sm navbar navbar-inverse ">

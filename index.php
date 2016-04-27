@@ -150,20 +150,20 @@
      <div class="section">
        <?php if (!empty($sectionBackgroundImages[5])): ?>
          <!-- do a hacky fix for now -->
-         <img src="<?php echo "./".$themeUploadsPath.$sectionBackgroundImages[4] ?>" class="background">
+         <img src="<?php echo "./".$themeUploadsPath.$sectionBackgroundImages[5] ?>" class="background">
        <?php else: ?>
          <div class="background"></div>
        <?php endif ?>
        <div class="front">
          <div class="container">
-           <span class="glyphicon <?php echo $sectionTitleIcons[6] ?>" aria-hidden="true"></span>
-           <p class="sans-serif-800"><?php echo $sectionTitle1s[6] ?></p>
-           <p class="serif-400"><?php echo $sectionTitle2s[6] ?></p>
+           <span class="glyphicon <?php echo $sectionTitleIcons[5] ?>" aria-hidden="true"></span>
+           <p class="sans-serif-800"><?php echo $sectionTitle1s[5] ?></p>
+           <p class="serif-400"><?php echo $sectionTitle2s[5] ?></p>
          </div>
        </div>
        <div class="back">
-         <p><?php echo $sectionInfos[6] ?></p>
-         <a href="<?php echo $sectionLinks[6] ?>">LEARN MORE</a>
+         <p><?php echo $sectionInfos[5] ?></p>
+         <a href="<?php echo $sectionLinks[5] ?>">LEARN MORE</a>
        </div>
      </div>
    </div>

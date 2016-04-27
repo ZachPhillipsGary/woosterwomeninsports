@@ -74,8 +74,9 @@
     </div><!-- end of nav-container-->
   </div><!-- end of nav-drawer-->
   <div class="container-fluid" style="background-color:#FFCC00;color:#000;height:100px;">
-  <?php echo get_theme_option("homepage_logo_large"); ?>
-  <h1 id="siteTitleHeader"><a href="//104.236.254.210/omeka/"><?php echo option('site_title'); ?></a></h1>
+  <!-- <?php echo option('site_title'); ?> -->
+  <img src="<?php   $themeUploadsPath = '/files/theme_uploads/'; $image = get_theme_option("homepage_logo_large"); 
+  ehho $themeUploadsPath.$image; ?>">
   </div>
   <div data-spy="affix" data-offset-top="197" class="hidden-xs hidden-sm navbar navbar-inverse ">
   <div class="container-fluid">

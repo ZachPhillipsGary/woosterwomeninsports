@@ -72,8 +72,8 @@
 
       </div><!-- end of container-->
     </div><!-- end of nav-container-->
-  </div><!-- end of nav-drawer-->
-  <div class="container-fluid" style="background-color:#FFCC00;color:#000;height:100px;">
+  </div><!-- end of nav-drawer #FFCC00-->
+  <div class="container-fluid" style="background-color:<?php get_theme_option('banner_color'); ?>;height:100px;">
   <!-- <?php echo option('site_title'); ?> -->
   <img src="<?php  $themeUploadsPath = './files/theme_uploads/'; $image = get_theme_option("homepage_logo_large"); 
   echo $themeUploadsPath.$image; ?>">

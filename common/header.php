@@ -75,12 +75,14 @@
   </div><!-- end of nav-drawer #FFCC00-->
   <div class="container-fluid" style="background-color:<?php echo get_theme_option('banner_color'); ?>;height:100px;">
   <!-- <?php echo option('site_title'); ?> -->
-  <img class="hidden-xs hidden-sm hidden-md " style="width:100% height:100px" src="<?php  $themeUploadsPath = './files/theme_uploads/'; $image = get_theme_option("homepage_logo_large"); 
+  <a href="<?php echo  link_to_home_page(); ?>">
+  <img class="hidden-xs hidden-sm hidden-md" style="width:100% height:100px" src="<?php  $themeUploadsPath = link_to_home_page()."files/theme_uploads/"; $image = get_theme_option("homepage_logo_large"); 
   echo $themeUploadsPath.$image; ?>">
     <img class="hidden-xl hidden-lg hidden-sm hidden-xs " style="width:100% height:100px" src="<?php  $themeUploadsPath = './files/theme_uploads/'; $image = get_theme_option("homepage_logo_med"); 
   echo $themeUploadsPath.$image; ?>">
    <img class="hidden-md hidden-lg hidden-xl hidden-xs " style="width:100% height:100px" src="<?php  $themeUploadsPath = './files/theme_uploads/'; $image = get_theme_option("homepage_logo_small"); 
   echo $themeUploadsPath.$image; ?>">
+  </a>
   </div>
   <div data-spy="affix" data-offset-top="197" class="hidden-xs hidden-sm navbar navbar-inverse ">
   <div class="container-fluid">

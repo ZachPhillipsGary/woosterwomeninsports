@@ -81,13 +81,10 @@
     print_r($match);
   ?>
   <!-- <?php echo option('site_title'); ?> -->
-  <a href="<?php echo  link_to_home_page(); ?>">
-  <img class="hidden-xs hidden-sm hidden-md" style="width:100% height:100px" src="<?php  $themeUploadsPath = link_to_home_page()."files/theme_uploads/"; $image = get_theme_option("homepage_logo_large"); 
-  echo $themeUploadsPath.$image; ?>">
-    <img class="hidden-xl hidden-lg hidden-sm hidden-xs " style="width:100% height:100px" src="<?php  $themeUploadsPath = './files/theme_uploads/'; $image = get_theme_option("homepage_logo_med"); 
-  echo $themeUploadsPath.$image; ?>">
-   <img class="hidden-md hidden-lg hidden-xl hidden-xs " style="width:100% height:100px" src="<?php  $themeUploadsPath = './files/theme_uploads/'; $image = get_theme_option("homepage_logo_small"); 
-  echo $themeUploadsPath.$image; ?>">
+  <a href="#">
+  <img class="hidden-xs hidden-sm hidden-md" style="width:100% height:100px" src="<?php echo img(get_theme_option("homepage_logo_large")); ?>
+    <img class="hidden-xl hidden-lg hidden-sm hidden-xs " style="width:100% height:100px" src="<?php eco img(get_theme_option("homepage_logo_med")); ?>
+   <img class="hidden-md hidden-lg hidden-xl hidden-xs " style="width:100% height:100px" src="<?php  echo img(get_theme_option("homepage_logo_small")); ?>">
   </a>
   </div>
   <div data-spy="affix" data-offset-top="197" class="hidden-xs hidden-sm navbar navbar-inverse ">

@@ -76,7 +76,7 @@
   <div class="container-fluid" style="background-color:<?php echo get_theme_option('banner_color'); ?>;height:100px;">
   <?php 
     preg_match('/<a href="(.+)">/', link_to_home_page(), $match);
-    print $match[0];
+    print $match;
   ?>
   <!-- <?php echo option('site_title'); ?> -->
   <a href="<?php echo  link_to_home_page(); ?>">

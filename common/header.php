@@ -75,7 +75,7 @@
   </div><!-- end of nav-drawer #FFCC00-->
   <div class="container-fluid" style="background-color:<?php echo get_theme_option('banner_color'); ?>;height:100px;">
   <?php 
-    preg_match('/<a href=\"([^\"]*)\">(.*)<\/a>/iU', link_to_home_page(), $match);
+    preg_match_all('/<a href=\"([^\"]*)\">(.*)<\/a>/iU', link_to_home_page(), $match, PREG_SET_ORDER);
     print_r($match);
   ?>
   <!-- <?php echo option('site_title'); ?> -->

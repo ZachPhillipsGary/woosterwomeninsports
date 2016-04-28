@@ -83,7 +83,7 @@
   <!-- <?php echo option('site_title'); ?> -->
   <a href="#">
   <img class="hidden-xs hidden-sm hidden-md" style="width:100% height:100px" src="<?php echo img(get_theme_option("homepage_logo_large")); ?>
-    <img class="hidden-xl hidden-lg hidden-sm hidden-xs " style="width:100% height:100px" src="<?php eco img(get_theme_option("homepage_logo_med")); ?>
+    <img class="hidden-xl hidden-lg hidden-sm hidden-xs " style="width:100% height:100px" src="<?php echo img(get_theme_option("homepage_logo_med")); ?>
    <img class="hidden-md hidden-lg hidden-xl hidden-xs " style="width:100% height:100px" src="<?php  echo img(get_theme_option("homepage_logo_small")); ?>">
   </a>
   </div>

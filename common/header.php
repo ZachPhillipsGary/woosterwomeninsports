@@ -81,7 +81,7 @@
    // print_r($match);
   ?>
   <!-- <?php echo option('site_title'); ?>   <?php echo public_url() ?> -->
-  <?php echo link_to_home_page("<img class='hidden-xs hidden-sm hidden-md' style=width:100% height:100px' src='".img('extralarge.png')."<img class='hidden-xl hidden-lg hidden-sm hidden-xs ' style='width:100% height:100px' src='".img('med.png')."<img class='hidden-md hidden-lg hidden-xl hidden-xs ' style='width:100% height:100px' src='".img('small.png')); ?>
+  <?php echo link_to_home_page("<img class='hidden-xs hidden-sm hidden-md' style=width:100% height:100px' src='".img('extralarge.png')."'><img class='hidden-xl hidden-lg hidden-sm hidden-xs ' style='width:100% height:100px' src='".img('med.png')."'><img class='hidden-md hidden-lg hidden-xl hidden-xs ' style='width:100% height:100px' src='".img('small.png')."'>"); ?>
   </div>
   <div data-spy="affix" data-offset-top="197" class="hidden-xs hidden-sm navbar navbar-inverse ">
   <div class="container-fluid">

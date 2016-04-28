@@ -81,10 +81,11 @@
     print_r($match);
   ?>
   <!-- <?php echo option('site_title'); ?> -->
+  <?php echo public_url() ?>
   <a href="#">
-  <img class="hidden-xs hidden-sm hidden-md" style="width:100% height:100px" src="<?php echo src(get_theme_option("homepage_logo_large"),'../files/theme_uploads/','.png'); ?>
-    <img class="hidden-xl hidden-lg hidden-sm hidden-xs " style="width:100% height:100px" src="<?php echo src(get_theme_option("homepage_logo_med"),'../files/theme_uploads/','.png'); ?>
-   <img class="hidden-md hidden-lg hidden-xl hidden-xs " style="width:100% height:100px" src="<?php  echo src(get_theme_option("homepage_logo_small"),'../files/theme_uploads/','.png'); ?>">
+  <img class="hidden-xs hidden-sm hidden-md" style="width:100% height:100px" src="<?php echo "../files/theme_uploads/".get_theme_option("homepage_logo_large"); ?>
+    <img class="hidden-xl hidden-lg hidden-sm hidden-xs " style="width:100% height:100px" src="<?php cho "../files/theme_uploads/".get_theme_option("homepage_logo_med"); ?>
+   <img class="hidden-md hidden-lg hidden-xl hidden-xs " style="width:100% height:100px" src="<?php cho "../files/theme_uploads/".get_theme_option("homepage_logo_small"); ?>">
   </a>
   </div>
   <div data-spy="affix" data-offset-top="197" class="hidden-xs hidden-sm navbar navbar-inverse ">

@@ -74,6 +74,10 @@
     </div><!-- end of nav-container-->
   </div><!-- end of nav-drawer #FFCC00-->
   <div class="container-fluid" style="background-color:<?php echo get_theme_option('banner_color'); ?>;height:100px;">
+  <?php 
+    preg_match('/<a href="(.+)">/', link_to_home_page(), $match);
+    print $match[1];
+  ?>
   <!-- <?php echo option('site_title'); ?> -->
   <a href="<?php echo  link_to_home_page(); ?>">
   <img class="hidden-xs hidden-sm hidden-md" style="width:100% height:100px" src="<?php  $themeUploadsPath = link_to_home_page()."files/theme_uploads/"; $image = get_theme_option("homepage_logo_large"); 

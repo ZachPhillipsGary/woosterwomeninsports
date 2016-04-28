@@ -76,7 +76,7 @@
   <div class="container-fluid" style="background-color:<?php echo get_theme_option('banner_color'); ?>;height:100px;">
   <?php 
     $string = link_to_home_page();
-    $match;
+    print web_path_to(get_theme_option("homepage_logo_large"));
     preg_match('#/<a href=\"([^\"]*)\">(.*)<\/a>/iU#', link_to_home_page(), $match);
     print_r($match);
   ?>

@@ -76,7 +76,8 @@
   <div class="container-fluid" style="background-color:<?php echo get_theme_option('banner_color'); ?>;height:100px;">
   <?php 
     $string = link_to_home_page();
-    preg_match_all('#/<a href=\"([^\"]*)\">(.*)<\/a>/iU#', link_to_home_page(), $match, PREG_SET_ORDER);
+    $match;
+    preg_match('#/<a href=\"([^\"]*)\">(.*)<\/a>/iU#', link_to_home_page(), $match);
     print_r($match);
   ?>
   <!-- <?php echo option('site_title'); ?> -->

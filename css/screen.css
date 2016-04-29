@@ -1231,7 +1231,7 @@ padding-right: 0px
 }
 #exhibitMenu {
   text-align: center;
-  padding-left: 20%;
+  width: 20%;
 }
 .dropdown-menu {
 align-items: left;

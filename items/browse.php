@@ -11,6 +11,8 @@
 
 <div>
   <div class="container">
+  <div class="text-center">
+
     <button class="btn btn-default expand-advanced-search">
       ADVANCED SEARCH
     </button>
@@ -21,7 +23,7 @@
       <small>-BROWSE-</small>
       <h1>Items <?php echo __('(%s total)', $total_results); ?></h1>
     </div>
-
+</div>
 <!-- end of sort-links -->
 
   <div class="tagCloud" title="tags">

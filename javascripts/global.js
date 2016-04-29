@@ -27,7 +27,10 @@ if (!Omeka) {
         search_input.before(show_advanced);
         advanced_form.addClass('closed');
       }
-
+       $("#exhibitMenu").click(function(){
+              $('.dropdown-menu').toggle()
+        });
+ 
       $('.show-advanced').click(function(e) {
         e.preventDefault();
         advanced_form.toggleClass('open').toggleClass('closed');

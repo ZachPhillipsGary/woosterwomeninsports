@@ -1242,6 +1242,9 @@ text-align: center;
       list-style-type: none;
       margin-left: 20px;
 }
+ul.dropdown-menu {
+  margin-right: 40px;
+}
 .dropdown-menu>li>a {
   display: block;
 padding: 3px 20px;

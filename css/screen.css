@@ -1229,6 +1229,9 @@ span.glyphicon.glyphicon-menu-hamburger {
 padding-left: 0px;
 padding-right: 0px
 }
+#exhibitMenu {
+  margin-left: 20%;
+}
 .dropdown-menu {
 align-items: left;
 }

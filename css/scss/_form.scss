@@ -43,14 +43,11 @@
 form {
     & input[type="text"] {
     @extend .serif-400;
-    letter-spacing: 0.05em;
     @include appearance(none);
-    padding: 10px 0;
     margin: 10px 0;
     border: none;
     border-bottom: 1px solid $dark-grey;
     border-radius: 0;
-    font-size: 1.5em;
     width: 100%;
 
     &.advanced-search-terms {

@@ -10,7 +10,7 @@
 ?>
    <div class="dropdown">
 
-    <button class="btn btn-default center-block dropdown-toggle" data-spy="affix" type="button" id="exhibitMenu" data-toggle="dropdown">Menu<span class="caret"></span></button>
+    <button class="btn btn-default center-block dropdown-toggle" data-spy="affix" type="button" id="exhibitMenu" data-toggle="dropdown"><?php echo $title ?><span class="caret"></span></button>
       <?php $menu = exhibit_builder_page_nav();  echo $menu;
  $dropdownMenu = preg_replace('/(<ul\b[^><]*)>/i', '$1 role="menu" aria-labelledby="exhibitMenu" class="dropdown-menu">', $menu);
  echo $dropdownMenu;
@@ -20,7 +20,7 @@
 <div class="container exhibit">
   <div class="section-header col-md-10 col-md-offset-1">
     <small>-EXHIBITS SUMMARY-</small>
-    <h1><?php echo $title ?></h1>
+    <h1></h1>
   </div><!-- end of section-header -->
 
   <article>

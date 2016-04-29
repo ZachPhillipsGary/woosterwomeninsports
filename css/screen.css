@@ -1230,6 +1230,7 @@ padding-left: 0px;
 padding-right: 0px
 }
 #exhibitMenu {
+  text-align: center;
   padding-left: 20%;
 }
 .dropdown-menu {

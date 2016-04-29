@@ -1229,7 +1229,7 @@ span.glyphicon.glyphicon-menu-hamburger {
 padding-left: 0px;
 padding-right: 0px
 }
-.dropdown-menu {
+.dropdown-menu > li {
       list-style-type: none;
 }
 /*# sourceMappingURL=screen.css.map */

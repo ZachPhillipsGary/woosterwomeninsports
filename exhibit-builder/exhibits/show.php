@@ -10,23 +10,12 @@
 <div class="container exhibit">
  <div class="dropdown">
 
-    <button class="btn btn-default dropdown-toggle" type="button" id="exhibitMenu" data-toggle="dropdown">Menu<span class="caret"></span></button>
+    <button class="btn btn-default center-block dropdown-toggle" type="button" id="exhibitMenu" data-toggle="dropdown">Menu<span class="caret"></span></button>
       <?php $menu = exhibit_builder_page_tree($exhibit, $exhibit_page); 
  $dropdownMenu = preg_replace('/(<ul\b[^><]*)>/i', '$1 role="menu" aria-labelledby="exhibitMenu" class="dropdown-menu">', $menu);
  echo $dropdownMenu;
       ?>
-<!-- Single button -->
-<div class="btn-group">
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Action <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
+
 </div>
   <div class="section-header col-md-8 col-md-offset-2">
     <small>-EXHIBIT-</small>

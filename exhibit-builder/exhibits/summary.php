@@ -18,7 +18,7 @@
   <article>
     <div class="col-md-8 col-md-offset-2">
       <div class="article-content">
-        <?php echo exhibit_builder_page_nav(); ?>
+     <!--   <?php echo exhibit_builder_page_nav(); ?> -->
         <?php echo $description; ?>
         <b>Credits</b>
         <p><?php echo $credits; ?></p>

@@ -73,7 +73,7 @@
       </div><!-- end of container-->
     </div><!-- end of nav-container-->
   </div><!-- end of nav-drawer #FFCC00-->
-  <div class="container-fluid" style="background-color:<?php echo get_theme_option('banner_color'); ?>;height:100px;">
+  <div class="container-fluid" style="background-color:<?php echo get_theme_option('banner_color'); ?>;height:100px;margin-bottom: 10px;">
   <?php 
    // $string = link_to_home_page();
    // print web_path_to(get_theme_option("homepage_logo_large"));
@@ -81,7 +81,7 @@
    // print_r($match);
   ?>
   <!-- <?php echo option('site_title'); ?>   <?php echo public_url() ?> -->
-  <?php echo link_to_home_page("<img class='hidden-xs hidden-sm hidden-md' style=width:100% height:100px' src='".img('extralarge.png')."'><img class='hidden-xl hidden-lg hidden-sm hidden-xs ' style='width:100% height:100px' src='".img('med.png')."'><img class='hidden-md hidden-lg hidden-xl hidden-xs ' style='width:100% height:100px' src='".img('small.png')."'>"); ?>
+  <?php echo link_to_home_page("<img class='hidden-xs hidden-sm hidden-md' style='width:100% height:100px' src='".img('extralarge.png')."'><img class='hidden-xl hidden-lg hidden-sm hidden-xs ' style='width:100% height:100px' src='".img('med.png')."'><img class='hidden-md hidden-lg hidden-xl hidden-xs ' style='width:100% height:100px' src='".img('small.png')."'>"); ?>
   </div>
   <div class="hidden-xs hidden-sm navbar navbar-inverse ">
   <div class="container-fluid">

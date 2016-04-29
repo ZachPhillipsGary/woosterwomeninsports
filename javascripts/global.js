@@ -28,7 +28,7 @@ if (!Omeka) {
         advanced_form.addClass('closed');
       }
        $("#exhibitMenu").click(function(){
-              $('.dropdown-menu').toggle()
+              $('.dropdown-menu').toggle("slow")
         });
  
       $('.show-advanced').click(function(e) {

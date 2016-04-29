@@ -8,7 +8,9 @@
   $title = metadata('exhibit_page', 'title');
 ?>
 <div class="container exhibit">
- <div class="dropdown">
+
+  <div class="section-header col-md-8 col-md-offset-2">
+   <div class="dropdown">
 
     <button class="btn btn-default center-block dropdown-toggle" type="button" id="exhibitMenu" data-toggle="dropdown">Menu<span class="caret"></span></button>
       <?php $menu = exhibit_builder_page_tree($exhibit, $exhibit_page); 
@@ -17,7 +19,6 @@
       ?>
 
 </div>
-  <div class="section-header col-md-8 col-md-offset-2">
     <small>-EXHIBIT-</small>
     <h1><?php echo $title ?></h1>
   </div><!-- end of section-header -->

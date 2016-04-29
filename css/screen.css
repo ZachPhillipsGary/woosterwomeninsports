@@ -1229,7 +1229,10 @@ span.glyphicon.glyphicon-menu-hamburger {
 padding-left: 0px;
 padding-right: 0px
 }
-/*.dropdown-menu > li {
+.dropdown-menu {
+  border-radius: 25px;
+}
+.dropdown-menu > li {
       list-style-type: none;
 }
 .dropdown-menu>li>a {
@@ -1240,5 +1243,5 @@ font-weight: 400;
 line-height: 1.42857143;
 color: #333;
 white-space: nowrap
-}*/
+}
 /*# sourceMappingURL=screen.css.map */

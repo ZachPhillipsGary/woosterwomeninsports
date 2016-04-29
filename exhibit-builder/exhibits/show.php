@@ -7,6 +7,8 @@
 <?php
   $title = metadata('exhibit_page', 'title');
 ?>
+   <div class="dropdown">
+
     <button class="btn btn-default center-block dropdown-toggle" data-spy="affix" data-offset-top="197" type="button" id="exhibitMenu" data-toggle="dropdown">Menu<span class="caret"></span></button>
       <?php $menu = exhibit_builder_page_tree($exhibit, $exhibit_page); 
  $dropdownMenu = preg_replace('/(<ul\b[^><]*)>/i', '$1 role="menu" aria-labelledby="exhibitMenu" class="dropdown-menu">', $menu);
@@ -17,7 +19,6 @@
 <div class="container exhibit">
 
   <div class="section-header col-md-8 col-md-offset-2">
-   <div class="dropdown">
 
 
     <small>-EXHIBIT-</small>

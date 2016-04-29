@@ -1233,8 +1233,11 @@ padding-right: 0px
   text-align: center;
   width: 20%;
   margin-bottom:5px;
-  border-radius: 0px 0px 30px 30px;
+}
+button#exhibitMenu.btn.btn-default.center-block.dropdown-toggle {
+    border-radius: 0px 0px 30px 30px;
 font-size: 20px;
+
 }
 .dropdown-menu {
 align-items: left;

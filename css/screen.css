@@ -1260,4 +1260,12 @@ line-height: 1.42857143;
 color: #333;
 white-space: nowrap
 }
+  .affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
 /*# sourceMappingURL=screen.css.map */

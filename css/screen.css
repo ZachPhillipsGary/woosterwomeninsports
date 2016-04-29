@@ -1235,6 +1235,7 @@ padding-right: 0px
 }
 .dropdown-menu {
 align-items: left;
+text-align: center;
 }
 .dropdown-menu > li {
       text-align: center;

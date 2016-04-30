@@ -1264,7 +1264,9 @@ white-space: nowrap
       top: 0;
       width: 100%;
   }
-
+ul.dropdown-menu {
+  display: none;
+}
   .affix + .container-fluid {
       padding-top: 70px;
   }

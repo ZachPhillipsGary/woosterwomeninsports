@@ -1271,7 +1271,21 @@ ul.dropdown-menu {
   }
   input#query {
   border-left: 2px solid #fff;
-   font-size: 8px;
+}
+input::-webkit-input-placeholder {
+     font-size: 8px;
+}
+
+input::-moz-placeholder { /* Firefox 18- */
+     font-size: 8px;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+     font-size: 8px;
+}
+
+input::-ms-input-placeholder {  
+      font-size: 8px;
 }
 .back {
   cursor:pointer

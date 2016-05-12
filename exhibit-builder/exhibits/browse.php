@@ -4,7 +4,6 @@
 ?>
 
 <div class="container">
-
   <div class="section-header col-md-10 col-md-offset-1">
     <small>-BROWSE-</small>
     <h1>Exhibits <?php echo __('(%s total)', $total_results); ?></h1>
@@ -31,7 +30,6 @@
         <p><?php echo $exhibitDescription; ?></p>
         <div class="tags"><?php echo $exhibitTags; ?></div>
       </div>
-
     <?php endforeach; ?>
   </div>
 
@@ -53,6 +51,8 @@
 
 <script type="text/javascript">
   jQuery(document).ready(function () {
+  
+
     // init Masonry
     var $grid = $('.search-results').masonry({
       itemSelector: '.exhibit-item',

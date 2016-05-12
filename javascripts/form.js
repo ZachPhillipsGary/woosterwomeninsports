@@ -1,4 +1,6 @@
 var main = function () {
+  //dynamically inject search form placeholder text
+  $("#query").attr( "placeholder", "type search terms here" );
   $(".expand-advanced-search").click(function () {
     var form = $(".advanced-search-form-extra");
     var button = $(".expand-advanced-search");
@@ -11,4 +13,4 @@ var main = function () {
     }
   });
 };
-$(document).ready(main); 
+$(document).ready(main);

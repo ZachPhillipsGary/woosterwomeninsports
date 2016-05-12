@@ -11,28 +11,40 @@
 
 <div>
   <div class="container">
-    <button class="expand-advanced-search closed">
-      <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
-      <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+  <div class="text-center">
+
+    <button class="btn btn-default expand-advanced-search">
       ADVANCED SEARCH
     </button>
-    <div class="section-header col-md-10 col-md-offset-1">
+    <button id="openTagCloud" class="btn btn-default" >
+      TAGS
+    </button>
+    <div id="itemTitle" class="section-header col-md-10 col-md-offset-1">
       <small>-BROWSE-</small>
       <h1>Items <?php echo __('(%s total)', $total_results); ?></h1>
     </div>
+</div>
+<!-- end of sort-links -->
 
-    <div class="sort-links col-md-8 col-md-offset-2">
-      <span class="sort-label">-SORT BY-</span>
-      <?php
-        echo pagination_links();
-        if ($total_results > 0) {
-          $sortLinks[__('Title')] = 'Dublin Core,Title';
-          $sortLinks[__('Creator')] = 'Dublin Core,Creator';
-          $sortLinks[__('Date Added')] = 'added';
-          echo browse_sort_links($sortLinks);
-        }
-      ?>
-    </div><!-- end of sort-links -->
+  <div class="tagCloud" title="tags">
+  <div class="container">
+  <div class="section-header col-md-10 col-md-offset-1">
+  <small>-BROWSE-</small>
+      <h1>Tags</h1>
+      </div>
+          <?php $tags = get_recent_tags(99999);
+           echo tag_cloud($tags, 'items/browse'); ?>
+              <?php foreach (loop('items') as $item): ?>
+              <?php $itemTags = tag_string('item', 'items/browse', ''); ?>
+              <div class="cloudtags"><?php //echo $itemTags; ?></div>
+              <span class="label label-default"></span>
+
+                <?php endforeach; ?>
+                  </div>
+                  </div>
+
+</div>
+
 
 
 
@@ -58,7 +70,7 @@
   </div><!-- end of grid-->
 
   <div class="container">
-    <?php echo pagination_links(); ?>
+      <?php echo pagination_links(); ?>
   </div>
 
   <footer role="contentinfo" class="jumbotron">
@@ -82,8 +94,17 @@
 
 <script type="text/javascript">
   jQuery(document).ready(function () {
-    $("button").click(function(){
-    $("p").toggle();
+
+    $('.popularity').addClass( 'list-unstyled' );
+     $( ".popularity" ).children().addClass( "exhibit-item" );
+     $( ".popularity" ).children().addClass( "tags" );
+      $( ".tagCloud" ).toggle();
+
+
+    $("#openTagCloud").click(function(){
+          $( ".tagCloud" ).toggle();
+          $("#itemTitle").toggle();
+
     });
     Omeka.Search.activateSearchButtons();
 

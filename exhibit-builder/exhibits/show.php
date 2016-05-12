@@ -7,13 +7,26 @@
 <?php
   $title = metadata('exhibit_page', 'title');
 ?>
+   <div class="dropdown">
 
+    <button class="btn btn-default center-block dropdown-toggle" data-spy="affix" type="button" id="exhibitMenu" data-toggle="dropdown">Menu<span class="caret"></span></button>
+      <?php $menu = exhibit_builder_page_tree($exhibit, $exhibit_page); 
+ $dropdownMenu = preg_replace('/(<ul\b[^><]*)>/i', '$1 role="menu" aria-labelledby="exhibitMenu" class="dropdown-menu">', $menu);
+ echo $dropdownMenu;
+      ?>
+
+</div>
 <div class="container exhibit">
+
   <div class="section-header col-md-8 col-md-offset-2">
+
+
     <small>-EXHIBIT-</small>
     <h1><?php echo $title ?></h1>
   </div><!-- end of section-header -->
 </div><!-- end of container -->
+
+
 
 <div class="container exhibit">
   <article>
@@ -22,15 +35,15 @@
         <?php exhibit_builder_render_exhibit_page(); ?>
       </div>
     </div>
+       
+
   </article>
+
 </div>
 
 <div class="container">
-  <nav id="exhibit-pages" class="col-md-8 col-md-offset-2">
-    <p><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></p>
-    <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
-  </nav>
-  
+
+
   <nav>
     <ul id="exhibit-page-navigation" class="pager">
       <?php if ($prevLink = exhibit_builder_link_to_previous_page()): ?>
@@ -44,13 +57,11 @@
         </li>
       <?php endif; ?>
     </ul>
-    <div id="exhibit-nav-up">
-      <?php echo exhibit_builder_page_trail(); ?>
-    </div>
+
   </nav>
 </div><!-- end of container -->
-  
-  
 
-  
+
+
+
 <?php echo foot(); ?>

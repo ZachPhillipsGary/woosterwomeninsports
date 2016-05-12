@@ -102,9 +102,12 @@
 
     <div class="col-lg-2 col-md-3 col-sm-6">
       <?php
-        showCollectionDescriptionTag('RIGHTS', $rights); 
+        showCollectionDescriptionTag('RIGHTS', $rights);
+        showCollectionDescriptionTag("COVERAGE",$coverage);
+        showCollectionDescriptionTag("RELATION",$relation);
       ?>
     </div>
+
     
   </div><!-- end of collection-description -->
 </div>

@@ -7,8 +7,8 @@
 
 <div class="container">
   <div class="section-header col-md-10 col-md-offset-1">
-    <small>-PAGES-</small>
-    <h1>Article</h1>
+    <small>-About-</small>
+    <h1 style="display: none;" >Home</h1>
   </div><!-- end of section-header -->
   
   <article class="col-md-12">

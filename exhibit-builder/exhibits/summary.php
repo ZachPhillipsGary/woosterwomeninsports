@@ -1,3 +1,4 @@
+
 <?php echo head(array('title' => metadata('exhibit', 'title'), 'bodyclass'=>'exhibits summary')); ?>
 
 <?php
@@ -6,20 +7,28 @@
   $credits = metadata('exhibit', 'credits');
   $tags = tag_string('exhibit', 'exhibits', '');
   $pageTree = exhibit_builder_page_tree();
-  //add dropdown formatting to $pageTree
-  
 ?>
+   <div class="dropdown">
 
+    <button class="btn btn-default center-block dropdown-toggle" data-spy="affix" type="button" id="exhibitMenu" data-toggle="dropdown"><?php echo $title ?><span class="caret"></span></button>
+      <?php 
+ $dropdownMenu = preg_replace('/(<ul\b[^><]*)>/i', '$1 role="menu" aria-labelledby="exhibitMenu" class="dropdown-menu">', $pageTree);
+ echo $dropdownMenu;
+      ?>
+
+</div>
 <div class="container exhibit">
   <div class="section-header col-md-10 col-md-offset-1">
     <small>-EXHIBITS SUMMARY-</small>
-    <h1><?php echo $title ?></h1>
+    <h1></h1>
   </div><!-- end of section-header -->
 
   <article>
     <div class="col-md-8 col-md-offset-2">
       <div class="article-content">
-        <?php echo exhibit_builder_page_nav(); ?>
+     <!--   <?php echo exhibit_builder_page_nav(); ?> -->
+
+
         <?php echo $description; ?>
         <b>Credits</b>
         <p><?php echo $credits; ?></p>
@@ -28,14 +37,10 @@
 
       </div>
     </div>
+   
   </article>
 
-  <div class="dropdown">
-  <button id="exhibit-pages" class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Exhibit Navigation
-  <span class="caret"></span></button>
-    <?php echo $pageTree; ?>
 
-</div>
 
 
 </div>

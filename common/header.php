@@ -72,16 +72,24 @@
 
       </div><!-- end of container-->
     </div><!-- end of nav-container-->
-  </div><!-- end of nav-drawer-->
-  <div class="container-fluid" style="background-color:#FFCC00;color:#000;height:100px;">
-  <h1 id="siteTitleHeader"><a href="//104.236.254.210/omeka/"><?php echo option('site_title'); ?></a></h1>
+  </div><!-- end of nav-drawer #FFCC00-->
+  <div class="container-fluid" style="background-color:<?php echo get_theme_option('banner_color'); ?>;height:100px;"><div id="logo" style="margin-bottom: 10px;">
+  <?php 
+   // $string = link_to_home_page();
+   // print web_path_to(get_theme_option("homepage_logo_large"));
+   // preg_match('#/<a href=\"([^\"]*)\">(.*)<\/a>/iU#', link_to_home_page(), $match);
+   // print_r($match);
+  ?>
+  <!-- <?php echo option('site_title'); ?>   <?php echo public_url() ?> -->
+  <?php echo link_to_home_page("<img class='hidden-xs hidden-sm hidden-md' style='width:100% height:100px' src='".img('extralarge.png')."'><img class='hidden-xl hidden-lg hidden-sm hidden-xs ' style='width:100% height:100px' src='".img('med.png')."'><img class='hidden-md hidden-lg hidden-xl hidden-xs ' style='width:100% height:100px' src='".img('small.png')."'>"."<img class='hidden-md hidden-lg hidden-xl hidden-sm' src='".img('mobile.png')."'>"); ?>
   </div>
-  <div data-spy="affix" data-offset-top="197" class="hidden-xs hidden-sm navbar navbar-inverse ">
+  </div>
+  <div class="hidden-xs hidden-sm navbar navbar-inverse ">
   <div class="container-fluid">
     <div class="row">
       <div class=" col-md-8 ">
     <div class=" navbar-header collapse navbar-collapse">
-    </div>
+    </div>  
       <?php
         $menu = public_nav_main();
         $menu -> setUlClass('nav navbar-nav');
@@ -106,5 +114,6 @@
 </div>
 
   <label class="hidden-lg hidden-md hidden-xl navigation-button" for="nav-drawer-toggle">
+    MENU
     <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
   </label>

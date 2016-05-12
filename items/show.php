@@ -93,10 +93,20 @@
     <div class="col-lg-2 col-md-3 col-sm-6">
       <?php
         showItemDescriptionTag('RIGHTS', $rights);
+        showItemDescriptionTag("COVERAGE",$coverage);
+        showItemDescriptionTag("RELATION",$relation);
+
       ?>
     </div>
 
   </div><!-- end of item-description -->
 </div><!-- end of item container -->
+<script>
+  jQuery(document).ready(function () {
+   // var searchText = $('.item-description-tag').text(),
+   // urls = searchText.replace(/\b(http|https)?(:\/\/)?(\S*)\.(\w{2,4})\b/ig);
+
+  };
+</script>
 
 <?php echo foot(); ?>

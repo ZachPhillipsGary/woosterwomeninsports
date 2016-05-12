@@ -421,10 +421,10 @@ article p#simple-pages-breadcrumbs {
 .navigation-button {
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
   margin: auto;
   z-index: 9999;
+  height:100px;
   /* Firefox */
   -moz-transition: top 0.3s ease-in-out;
   /* WebKit */
@@ -433,19 +433,19 @@ article p#simple-pages-breadcrumbs {
   -o-transition: top 0.3s ease-in-out;
   /* Standard */
   transition: top 0.3s ease-in-out;
-  width: 60px;
+  width: 170px;
   background-color: #000000;
   display: block;
   padding-top: 20px;
   padding-bottom: 15px;
-  padding-left: 8px;
+  padding-left: 8px;:
   cursor: pointer;
   font-size: 2em;
   color: white;
   line-height: 0.5em;
   letter-spacing: 0.3em;
   text-align: center;
-  border-bottom: 8px solid #CFB53B; }
+/*  border-bottom: 8px solid #CFB53B;*/ }
 
 .nav-container {
   border-bottom: 8px solid #000000;
@@ -676,7 +676,7 @@ nav {
           letter-spacing: 0.2em; }
     .highlight-jumbotron .section .back {
       height: 100%;
-      background-color: rgba(81, 71, 23, 0.9);
+      background-color: rgba(255, 200, 11, 0.9);
       z-index: 3;
       opacity: 0;
       /* Firefox */
@@ -746,7 +746,6 @@ form input[type="text"] {
   border: none;
   border-bottom: 1px solid #4a4a4a;
   border-radius: 0;
-  font-size: 1.5em;
   width: 100%; }
   form input[type="text"].advanced-search-terms {
     width: 90%; }
@@ -965,7 +964,6 @@ input[type=checkbox].checkbox-hidden {
       background-color: #4a4a4a; }
 
 footer {
-  margin-top: 200px;
   margin-bottom: 0 !important; }
   footer #footer-text p {
     text-transform: uppercase;
@@ -1139,5 +1137,143 @@ font-family: Cardo, 'Times New Roman', Times, serif;
 #siteTitleHeader > a {
   color: rgb(74, 74, 74);
   text-decoration: none;
+}
+.navbar-inverse {
+-webkit-border-radius: 0 !important;
+   -moz-border-radius: 0 !important;
+        border-radius: 0 !important;
+        margin-bottom: 0px !important;
+}
+.col-md-4.col-sm-6.front-highlights {
+   padding-left: 0px;
+  padding-right: 0px;
+}
+li.page-input {
+  display: none !important;
+}
+#advancedSearch {
+  display: none;
+}
+#tagsModal {
+  display: none;
+}
+span.glyphicon.glyphicon-menu-hamburger {
+  padding-top: 15px;
+}
+#exhibit-pages {
+  font-size: 1.0em;
+}
+#exhibit-pages ul {
+  font-size: 15px;
+}
+
+.box {
+  width: 20%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: orange;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+.highlight-jumbotron .col-md-4, .col-sm-6 {
+padding-left: 0px;
+padding-right: 0px
+}
+#exhibitMenu {
+  text-align: center;
+  margin-bottom:5px;
+  min-width: 20%;
+
+}
+button#exhibitMenu.btn.btn-default.center-block.dropdown-toggle {
+    border-radius: 0px 0px 30px 30px;
+font-size: 20px;
+
+}
+.dropdown-menu {
+align-items: left;
+text-align: center;
+}
+.dropdown-menu > li {
+      text-align: center;
+      list-style-type: none;
+      margin-left: 20px;
+}
+ul.dropdown-menu {
+  margin-right: 40px;
+}
+.dropdown-menu>li>a {
+  display: block;
+padding: 3px 20px;
+clear: both;
+font-weight: 400;
+line-height: 1.42857143;
+color: #333;
+white-space: nowrap
+}
+  .affix {
+      top: 0;
+      width: 100%;
+  }
+ul.dropdown-menu {
+  display: none;
+}
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+  input#query {
+  border-left: 2px solid #fff;
+  overflow-y: visible; /* FF Fix */
+    } 
+.back {
+  cursor:pointer
 }
 /*# sourceMappingURL=screen.css.map */

@@ -63,3 +63,59 @@ body {
   background-color: $dark-grey;
   color: white;
 }
+/* Begin Wooster Women in Sport theme additions */
+.highlight-jumbotron .col-md-4, .col-sm-6 {
+padding-left: 0px;
+padding-right: 0px
+}
+#exhibitMenu {
+  text-align: center;
+  margin-bottom:5px;
+    min-width: 20%;
+
+}
+button#exhibitMenu.btn.btn-default.center-block.dropdown-toggle {
+    border-radius: 0px 0px 30px 30px;
+font-size: 20px;
+
+}
+.dropdown-menu {
+align-items: left;
+text-align: center;
+}
+.dropdown-menu > li {
+      text-align: center;
+      list-style-type: none;
+      margin-left: 20px;
+}
+ul.dropdown-menu {
+  margin-right: 40px;
+}
+.dropdown-menu>li>a {
+  display: block;
+padding: 3px 20px;
+clear: both;
+font-weight: 400;
+line-height: 1.42857143;
+color: #333;
+white-space: nowrap
+}
+  .affix {
+      top: 0;
+      width: 100%;
+  }
+ul.dropdown-menu {
+  display: none;
+}
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+input::-webkit-input-placeholder {
+  display:none;
+}
+input::-moz-placeholder {
+ display:none;
+}
+.back {
+  cursor:pointer;
+}

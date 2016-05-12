@@ -141,8 +141,9 @@
          </div>
        </div>
        <div class="back">
+       <a href="<?php echo $sectionLinks[4] ?>">
          <p><?php echo $sectionInfos[4] ?></p>
-         <a href="<?php echo $sectionLinks[4] ?>">LEARN MORE</a>
+          </a>
        </div>
      </div>
    </div>

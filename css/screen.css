@@ -1276,4 +1276,7 @@ ul.dropdown-menu {
 .back {
   cursor:pointer
 }
+button.btn.btn-default.expand-advanced-search {
+  margin-left: 30px;
+}
 /*# sourceMappingURL=screen.css.map */

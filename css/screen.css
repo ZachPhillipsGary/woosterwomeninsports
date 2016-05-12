@@ -1272,6 +1272,7 @@ ul.dropdown-menu {
   input#query {
   border-left: 2px solid #fff;
   line-height: 14px !important; /* FF fix */ 
+  vertical-align: middle;
 } 
 .back {
   cursor:pointer

@@ -965,7 +965,6 @@ input[type=checkbox].checkbox-hidden {
       background-color: #4a4a4a; }
 
 footer {
-  margin-top: 200px;
   margin-bottom: 0 !important; }
   footer #footer-text p {
     text-transform: uppercase;

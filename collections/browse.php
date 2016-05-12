@@ -31,7 +31,7 @@
       $collectionImage = record_image('collection', 'square_thumbnail');
       $collectionDescription = metadata('collection', array('Dublin Core', 'Description'), array('snippet'=>150));
       $collectionContributors = metadata('collection', array('Dublin Core', 'Contributor'), array('all'=>true, 'delimiter'=>', '));
-      $collectionSubjects = metadata('collection', array('Dublin Core', 'Subject'), array('snippet' => 150, 'delimiter'=>', '));
+      $collectionSubjects = metadata('collection', array('Dublin Core', 'Subject'), array('snippet' => 50, 'delimiter'=>', '));
 
     ?>
 

@@ -1272,4 +1272,7 @@ ul.dropdown-menu {
   input#query {
   border-left: 2px solid #fff;
 }
+.back {
+  cursor:pointer
+}
 /*# sourceMappingURL=screen.css.map */

@@ -75,8 +75,8 @@
            <p class="serif-400"><?php echo $sectionTitle2s[1] ?></p>
          </div>
        </div>
-       <div class="back">
-         <p onClick="window.location='<?php echo $sectionLinks[1] ?>'"><?php echo $sectionInfos[1] ?></p>
+       <div onClick="window.location='<?php echo $sectionLinks[1] ?>'" class="back">
+         <p ><?php echo $sectionInfos[1] ?></p>
          <a href="<?php echo $sectionLinks[1] ?>">LEARN MORE</a>
        </div>
      </div>
@@ -97,8 +97,8 @@
            <p class="serif-400"><?php echo $sectionTitle2s[2] ?></p>
          </div>
        </div>
-       <div class="back">
-         <p onClick="window.location='<?php echo $sectionLinks[2] ?>'"><?php echo $sectionInfos[2] ?></p>
+       <div onClick="window.location='<?php echo $sectionLinks[2] ?>'" class="back">
+         <p><?php echo $sectionInfos[2] ?></p>
          <a href="<?php echo $sectionLinks[2] ?>">LEARN MORE</a>
        </div>
      </div>
@@ -119,8 +119,8 @@
            <p class="serif-400"><?php echo $sectionTitle2s[3] ?></p>
          </div>
        </div>
-       <div class="back">
-         <p onClick="window.location='<?php echo $sectionLinks[3] ?>'"><?php echo $sectionInfos[3] ?></p>
+       <div onClick="window.location='<?php echo $sectionLinks[3] ?>'" class="back">
+         <p ><?php echo $sectionInfos[3] ?></p>
          <a href="<?php echo $sectionLinks[3] ?>">LEARN MORE</a>
        </div>
      </div>
@@ -140,8 +140,8 @@
            <p class="serif-400"><?php echo $sectionTitle2s[4] ?></p>
          </div>
        </div>
-       <div class="back">
-         <p onClick="window.location='<?php echo $sectionLinks[4] ?>'"><?php echo $sectionInfos[4] ?></p>
+       <div  onClick="window.location='<?php echo $sectionLinks[4] ?>'" class="back">
+         <p><?php echo $sectionInfos[4] ?></p>
          <a href="<?php echo $sectionLinks[4] ?>">LEARN MORE</a>
        </div>
      </div>
@@ -161,8 +161,8 @@
            <p class="serif-400"><?php echo $sectionTitle2s[5] ?></p>
          </div>
        </div>
-       <div class="back">
-         <p onClick="window.location='<?php echo $sectionLinks[5] ?>'"><?php echo $sectionInfos[5] ?></p>
+       <div onClick="window.location='<?php echo $sectionLinks[5] ?>'" class="back">
+         <p ><?php echo $sectionInfos[5] ?></p>
          <a href="<?php echo $sectionLinks[5] ?>">LEARN MORE</a>
        </div>
      </div>

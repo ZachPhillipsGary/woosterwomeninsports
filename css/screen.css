@@ -1233,6 +1233,7 @@ padding-right: 0px
   min-width: 20%;
 
 }
+
 button#exhibitMenu.btn.btn-default.center-block.dropdown-toggle {
     border-radius: 0px 0px 30px 30px;
 font-size: 20px;
@@ -1275,5 +1276,8 @@ ul.dropdown-menu {
     } 
 .back {
   cursor:pointer
+}
+button.btn.btn-default.expand-advanced-search {
+  margin-right: 30px;
 }
 /*# sourceMappingURL=screen.css.map */

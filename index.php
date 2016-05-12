@@ -76,7 +76,7 @@
          </div>
        </div>
        <div class="back">
-         <p><?php echo $sectionInfos[1] ?></p>
+         <p onClick="window.location='<?php echo $sectionLinks[1] ?>'"><?php echo $sectionInfos[1] ?></p>
          <a href="<?php echo $sectionLinks[1] ?>">LEARN MORE</a>
        </div>
      </div>
@@ -98,7 +98,7 @@
          </div>
        </div>
        <div class="back">
-         <p><?php echo $sectionInfos[2] ?></p>
+         <p onClick="window.location='<?php echo $sectionLinks[2] ?>'"><?php echo $sectionInfos[2] ?></p>
          <a href="<?php echo $sectionLinks[2] ?>">LEARN MORE</a>
        </div>
      </div>
@@ -120,7 +120,7 @@
          </div>
        </div>
        <div class="back">
-         <p><?php echo $sectionInfos[3] ?></p>
+         <p onClick="window.location='<?php echo $sectionLinks[3] ?>'"><?php echo $sectionInfos[3] ?></p>
          <a href="<?php echo $sectionLinks[3] ?>">LEARN MORE</a>
        </div>
      </div>
@@ -142,8 +142,7 @@
        </div>
        <div class="back">
          <p onClick="window.location='<?php echo $sectionLinks[4] ?>'"><?php echo $sectionInfos[4] ?></p>
-         <a href="<?php echo $sectionLinks[4] ?>">
-          </a>
+         <a href="<?php echo $sectionLinks[4] ?>">LEARN MORE</a>
        </div>
      </div>
    </div>
@@ -163,7 +162,7 @@
          </div>
        </div>
        <div class="back">
-         <p><?php echo $sectionInfos[5] ?></p>
+         <p onClick="window.location='<?php echo $sectionLinks[5] ?>'"><?php echo $sectionInfos[5] ?></p>
          <a href="<?php echo $sectionLinks[5] ?>">LEARN MORE</a>
        </div>
      </div>

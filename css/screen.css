@@ -1268,4 +1268,7 @@ ul.dropdown-menu {
   .affix + .container-fluid {
       padding-top: 70px;
   }
+  #query {
+  border-left: 2px solid #fff;
+}
 /*# sourceMappingURL=screen.css.map */

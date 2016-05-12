@@ -97,6 +97,7 @@ input[type=checkbox].checkbox-hidden {
     border-bottom: 1px solid $dark-grey;
     border-radius: 0;
     width: 100%;
+    border-left: 2px solid #fff;
     
     &.advanced-search-terms {
       width: 90%;

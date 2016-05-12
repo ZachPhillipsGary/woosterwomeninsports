@@ -746,7 +746,6 @@ form input[type="text"] {
   border: none;
   border-bottom: 1px solid #4a4a4a;
   border-radius: 0;
-  font-size: 1.5em;
   width: 100%; }
   form input[type="text"].advanced-search-terms {
     width: 90%; }

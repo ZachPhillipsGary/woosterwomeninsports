@@ -1271,7 +1271,8 @@ ul.dropdown-menu {
   }
   input#query {
   border-left: 2px solid #fff;
-  } 
+  overflow-y: visible; /* FF Fix */
+    } 
 .back {
   cursor:pointer
 }

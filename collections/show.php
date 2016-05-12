@@ -107,6 +107,7 @@
         showCollectionDescriptionTag("RELATION",$relation);
       ?>
     </div>
+
     
   </div><!-- end of collection-description -->
 </div>

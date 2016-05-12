@@ -6,9 +6,9 @@
 ?>
 
 <div class="container">
-  <div class="section-header col-md-10 col-md-offset-1">
-    <small>-PAGES-</small>
-    <h1>Article</h1>
+  <div style="display: none;" class="section-header col-md-10 col-md-offset-1">
+    <small>-About-</small>
+    <h1>Home</h1>
   </div><!-- end of section-header -->
   
   <article class="col-md-12">

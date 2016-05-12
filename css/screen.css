@@ -1271,22 +1271,8 @@ ul.dropdown-menu {
   }
   input#query {
   border-left: 2px solid #fff;
-}
-input::-webkit-input-placeholder {
-     font-size: 8px;
-}
-
-input::-moz-placeholder { /* Firefox 18- */
-     font-size: 8px;
-}
-
-input::-moz-placeholder {  /* Firefox 19+ */
-     font-size: 8px;
-}
-
-input::-ms-input-placeholder {  
-      font-size: 8px;
-}
+  line-height: 14px !important; /* FF fix */ 
+} 
 .back {
   cursor:pointer
 }

@@ -141,8 +141,8 @@
          </div>
        </div>
        <div class="back">
-       <a href="<?php echo $sectionLinks[4] ?>">
-         <p><?php echo $sectionInfos[4] ?></p>
+         <p onClick="window.location='<?php echo $sectionLinks[4] ?>'"><?php echo $sectionInfos[4] ?></p>
+         <a href="<?php echo $sectionLinks[4] ?>">
           </a>
        </div>
      </div>

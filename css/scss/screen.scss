@@ -110,3 +110,6 @@ ul.dropdown-menu {
   .affix + .container-fluid {
       padding-top: 70px;
   }
+input::-webkit-input-placeholder {
+  font-size: 8px;
+}

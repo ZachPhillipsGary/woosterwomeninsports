@@ -39,7 +39,7 @@
       <?php echo $collectionImage ?>
       <h1><?php echo $collectionTitle; ?></h1>
       <p><?php echo $collectionDescription; ?></p>
-      <p><b>Subjects:</b><?php echo $collectionSubjects; ?></p>
+      <p><b>Subjects: </b><?php echo $collectionSubjects; ?></p>
       <?php fire_plugin_hook('public_collections_browse_each', array('view' => $this, 'collection' => $collection)); ?>
     </div>
 

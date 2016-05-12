@@ -53,7 +53,7 @@
             <p class="serif-400"><?php echo $sectionTitle2s[0] ?></p>
           </div>
         </div>
-        <div class="back">
+        <div onClick="window.location='<?php echo $sectionLinks[0] ?>'" class="back">
           <p><?php echo $sectionInfos[0] ?></p>
           <a href="<?php echo $sectionLinks[0] ?>">LEARN MORE</a>
         </div>

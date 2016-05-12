@@ -31,13 +31,15 @@
       $collectionImage = record_image('collection', 'square_thumbnail');
       $collectionDescription = metadata('collection', array('Dublin Core', 'Description'), array('snippet'=>150));
       $collectionContributors = metadata('collection', array('Dublin Core', 'Contributor'), array('all'=>true, 'delimiter'=>', '));
+      $collectionSubjects = metadata('collection', array('Dublin Core', 'Subject'), array('all'=>true, 'delimiter'=>', '));
+
     ?>
 
     <div class="exhibit-item" onclick="window.location='<?php echo $collectionLink ?>'">
       <?php echo $collectionImage ?>
       <h1><?php echo $collectionTitle; ?></h1>
       <p><?php echo $collectionDescription; ?></p>
-      <p><b>Contributors:</b><?php echo $collectionContributors; ?></p>
+      <p><b>Contributors:</b><?php echo $collectionSubjects; ?></p>
       <?php fire_plugin_hook('public_collections_browse_each', array('view' => $this, 'collection' => $collection)); ?>
     </div>
 
